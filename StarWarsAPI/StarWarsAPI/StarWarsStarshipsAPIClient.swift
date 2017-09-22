@@ -14,7 +14,7 @@ class StarWarsStarshipsAPIClient{
     
         var jsonStarWarsStarshipsArray = Array<Any>()
         
-        var starWarsStarshipURL = "https://swapi.co/api/starships"
+        let starWarsStarshipURL = "https://swapi.co/api/starships"
         
         let convertedURL = URL(string: starWarsStarshipURL)
         
