@@ -22,14 +22,23 @@ class ViewController: UIViewController {
     
         self.view.backgroundColor = UIColor.black
         
+        //peopleButton
         self.peopleButton.backgroundColor = .yellow
-        self.peopleButton.layer.cornerRadius = 5
+        self.peopleButton.layer.cornerRadius = 8
         self.peopleButton.layer.borderWidth = 1
         self.peopleButton.layer.borderColor = UIColor.white.cgColor
         
-        
+        //planetsButton
+        self.planetsButton.backgroundColor = .yellow
+        self.planetsButton.layer.cornerRadius = 8
+        self.planetsButton.layer.borderWidth = 1
+        self.planetsButton.layer.borderColor = UIColor.white.cgColor
 
-        
+        //starshipsButton
+        self.starshipsButton.backgroundColor = .yellow
+        self.starshipsButton.layer.cornerRadius = 8
+        self.starshipsButton.layer.borderWidth = 1
+        self.starshipsButton.layer.borderColor = UIColor.white.cgColor
         
     }
 
