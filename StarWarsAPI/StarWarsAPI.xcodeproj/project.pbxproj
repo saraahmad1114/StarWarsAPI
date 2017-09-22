@@ -16,6 +16,7 @@
 		1BC861391F732CD4001DD576 /* StarWarsAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC861381F732CD4001DD576 /* StarWarsAPITests.swift */; };
 		1BC861441F732CD4001DD576 /* StarWarsAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC861431F732CD4001DD576 /* StarWarsAPIUITests.swift */; };
 		1BCF5D601F74CD0A0044BB51 /* StarWarsPeopleAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF5D5F1F74CD0A0044BB51 /* StarWarsPeopleAPIClient.swift */; };
+		1BCF5D621F74D5740044BB51 /* StarWarsPlanetsAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF5D611F74D5740044BB51 /* StarWarsPlanetsAPIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		1BC861431F732CD4001DD576 /* StarWarsAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsAPIUITests.swift; sourceTree = "<group>"; };
 		1BC861451F732CD4001DD576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BCF5D5F1F74CD0A0044BB51 /* StarWarsPeopleAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarWarsPeopleAPIClient.swift; sourceTree = "<group>"; };
+		1BCF5D611F74D5740044BB51 /* StarWarsPlanetsAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarWarsPlanetsAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				1BC861201F732CD4001DD576 /* AppDelegate.swift */,
 				1BC861221F732CD4001DD576 /* ViewController.swift */,
+				1BCF5D611F74D5740044BB51 /* StarWarsPlanetsAPIClient.swift */,
 				1BC861241F732CD4001DD576 /* Main.storyboard */,
 				1BCF5D5F1F74CD0A0044BB51 /* StarWarsPeopleAPIClient.swift */,
 				1BC8612A1F732CD4001DD576 /* Assets.xcassets */,
@@ -269,6 +272,7 @@
 				1BC861291F732CD4001DD576 /* StarWarsAPI.xcdatamodeld in Sources */,
 				1BCF5D601F74CD0A0044BB51 /* StarWarsPeopleAPIClient.swift in Sources */,
 				1BC861231F732CD4001DD576 /* ViewController.swift in Sources */,
+				1BCF5D621F74D5740044BB51 /* StarWarsPlanetsAPIClient.swift in Sources */,
 				1BC861211F732CD4001DD576 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
