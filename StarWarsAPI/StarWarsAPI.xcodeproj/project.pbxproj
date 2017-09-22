@@ -15,6 +15,7 @@
 		1BC8612E1F732CD4001DD576 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BC8612C1F732CD4001DD576 /* LaunchScreen.storyboard */; };
 		1BC861391F732CD4001DD576 /* StarWarsAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC861381F732CD4001DD576 /* StarWarsAPITests.swift */; };
 		1BC861441F732CD4001DD576 /* StarWarsAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC861431F732CD4001DD576 /* StarWarsAPIUITests.swift */; };
+		1BCF5D601F74CD0A0044BB51 /* StarWarsPeopleAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF5D5F1F74CD0A0044BB51 /* StarWarsPeopleAPIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		1BC8613F1F732CD4001DD576 /* StarWarsAPIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarWarsAPIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BC861431F732CD4001DD576 /* StarWarsAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsAPIUITests.swift; sourceTree = "<group>"; };
 		1BC861451F732CD4001DD576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BCF5D5F1F74CD0A0044BB51 /* StarWarsPeopleAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarWarsPeopleAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				1BC861201F732CD4001DD576 /* AppDelegate.swift */,
 				1BC861221F732CD4001DD576 /* ViewController.swift */,
 				1BC861241F732CD4001DD576 /* Main.storyboard */,
+				1BCF5D5F1F74CD0A0044BB51 /* StarWarsPeopleAPIClient.swift */,
 				1BC8612A1F732CD4001DD576 /* Assets.xcassets */,
 				1BC8612C1F732CD4001DD576 /* LaunchScreen.storyboard */,
 				1BC8612F1F732CD4001DD576 /* Info.plist */,
@@ -264,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BC861291F732CD4001DD576 /* StarWarsAPI.xcdatamodeld in Sources */,
+				1BCF5D601F74CD0A0044BB51 /* StarWarsPeopleAPIClient.swift in Sources */,
 				1BC861231F732CD4001DD576 /* ViewController.swift in Sources */,
 				1BC861211F732CD4001DD576 /* AppDelegate.swift in Sources */,
 			);
@@ -512,6 +516,7 @@
 				1BC8614A1F732CD4001DD576 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1BC8614B1F732CD4001DD576 /* Build configuration list for PBXNativeTarget "StarWarsAPITests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +525,7 @@
 				1BC8614D1F732CD4001DD576 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1BC8614E1F732CD4001DD576 /* Build configuration list for PBXNativeTarget "StarWarsAPIUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +534,7 @@
 				1BC861501F732CD4001DD576 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
