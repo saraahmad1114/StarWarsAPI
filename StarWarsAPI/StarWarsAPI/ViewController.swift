@@ -22,10 +22,13 @@ class ViewController: UIViewController {
     
         self.view.backgroundColor = UIColor.black
         
-        self.peopleButton.backgroundColor = .clear
+        self.peopleButton.backgroundColor = .yellow
         self.peopleButton.layer.cornerRadius = 5
         self.peopleButton.layer.borderWidth = 1
-        self.peopleButton.layer.borderColor = UIColor.yellow.cgColor
+        self.peopleButton.layer.borderColor = UIColor.white.cgColor
+        
+        
+
         
         
     }
