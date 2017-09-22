@@ -10,6 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var peopleButton: UIButton!
+    
+    @IBOutlet weak var planetsButton: UIButton!
+    
+    @IBOutlet weak var starshipsButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

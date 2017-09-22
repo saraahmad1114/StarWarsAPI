@@ -39,6 +39,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="peopleButton" destination="swC-Ji-AOw" id="7um-lf-tmU"/>
+                        <outlet property="planetsButton" destination="72A-er-xlf" id="iWy-RC-1lc"/>
+                        <outlet property="starshipsButton" destination="OAG-1C-ujj" id="OJn-dL-lvs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
