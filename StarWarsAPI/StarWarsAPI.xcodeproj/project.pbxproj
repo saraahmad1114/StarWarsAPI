@@ -17,6 +17,7 @@
 		1BC861441F732CD4001DD576 /* StarWarsAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC861431F732CD4001DD576 /* StarWarsAPIUITests.swift */; };
 		1BCF5D601F74CD0A0044BB51 /* StarWarsPeopleAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF5D5F1F74CD0A0044BB51 /* StarWarsPeopleAPIClient.swift */; };
 		1BCF5D621F74D5740044BB51 /* StarWarsPlanetsAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF5D611F74D5740044BB51 /* StarWarsPlanetsAPIClient.swift */; };
+		1BCF5D641F74DA8F0044BB51 /* StarWarsStarshipsAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF5D631F74DA8F0044BB51 /* StarWarsStarshipsAPIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		1BC861451F732CD4001DD576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BCF5D5F1F74CD0A0044BB51 /* StarWarsPeopleAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarWarsPeopleAPIClient.swift; sourceTree = "<group>"; };
 		1BCF5D611F74D5740044BB51 /* StarWarsPlanetsAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarWarsPlanetsAPIClient.swift; sourceTree = "<group>"; };
+		1BCF5D631F74DA8F0044BB51 /* StarWarsStarshipsAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarWarsStarshipsAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			children = (
 				1BC861201F732CD4001DD576 /* AppDelegate.swift */,
 				1BC861221F732CD4001DD576 /* ViewController.swift */,
+				1BCF5D631F74DA8F0044BB51 /* StarWarsStarshipsAPIClient.swift */,
 				1BCF5D611F74D5740044BB51 /* StarWarsPlanetsAPIClient.swift */,
 				1BCF5D5F1F74CD0A0044BB51 /* StarWarsPeopleAPIClient.swift */,
 				1BC861241F732CD4001DD576 /* Main.storyboard */,
@@ -269,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BCF5D641F74DA8F0044BB51 /* StarWarsStarshipsAPIClient.swift in Sources */,
 				1BC861291F732CD4001DD576 /* StarWarsAPI.xcdatamodeld in Sources */,
 				1BCF5D601F74CD0A0044BB51 /* StarWarsPeopleAPIClient.swift in Sources */,
 				1BC861231F732CD4001DD576 /* ViewController.swift in Sources */,
