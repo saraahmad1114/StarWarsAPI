@@ -40,13 +40,7 @@ class ViewController: UIViewController {
         self.starshipsButton.layer.borderWidth = 1
         self.starshipsButton.layer.borderColor = UIColor.white.cgColor
         
-        
-        //works just fine! 
-        StarWarsPeopleAPIClient.getStarWarsPeopleInformation { (starWarsArray) in
-            print("****************************")
-            print(starWarsArray)
-            print("****************************")
-        }
+
         
     }
 
