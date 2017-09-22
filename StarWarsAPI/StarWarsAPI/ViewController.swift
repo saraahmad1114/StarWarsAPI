@@ -21,6 +21,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     
         self.view.backgroundColor = UIColor.black
+        
+        self.peopleButton.backgroundColor = .clear
+        self.peopleButton.layer.cornerRadius = 5
+        self.peopleButton.layer.borderWidth = 1
+        self.peopleButton.layer.borderColor = UIColor.yellow.cgColor
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
