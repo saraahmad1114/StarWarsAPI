@@ -114,10 +114,10 @@
             </objects>
             <point key="canvasLocation" x="1022" y="601"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Star Wars People Table View Controller-->
         <scene sceneID="k9q-4b-avb">
             <objects>
-                <tableViewController id="Mhp-6j-vN2" sceneMemberID="viewController">
+                <tableViewController id="Mhp-6j-vN2" customClass="StarWarsPeopleTableViewController" customModule="StarWarsAPI" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="K9D-ri-NKj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
