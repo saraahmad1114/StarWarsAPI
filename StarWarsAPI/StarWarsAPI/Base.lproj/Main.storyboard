@@ -58,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Star Wars Starship Table View Controller-->
         <scene sceneID="IxO-7z-Ebm">
             <objects>
-                <tableViewController id="aEb-xU-z6I" sceneMemberID="viewController">
+                <tableViewController id="aEb-xU-z6I" customClass="StarWarsStarshipTableViewController" customModule="StarWarsAPI" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="tK0-eX-7xy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,10 +86,10 @@
             </objects>
             <point key="canvasLocation" x="153" y="1010"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Star Wars Planets Table View Controller-->
         <scene sceneID="tuS-04-Tn0">
             <objects>
-                <tableViewController id="S0k-Gm-M5f" sceneMemberID="viewController">
+                <tableViewController id="S0k-Gm-M5f" customClass="StarWarsPlanetsTableViewController" customModule="StarWarsAPI" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="VBJ-SW-CsI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
