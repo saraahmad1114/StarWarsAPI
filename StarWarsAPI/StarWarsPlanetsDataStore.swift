@@ -1,5 +1,5 @@
 //
-//  StarWarsPeopleDataStore.swift
+//  StarWarsPlanetsDataStore.swift
 //  StarWarsAPI
 //
 //  Created by Flatiron School on 10/21/17.
@@ -8,13 +8,10 @@
 
 import Foundation
 
-class StarWarsPeopleDataStore{
+class StarWarsPlanetsDataStore{
     
-    static let sharedInstance = StarWarsPeopleDataStore()
+    static let sharedInstance = StarWarsPlanetsDataStore()
     private init() {}
-    
-    
-    
     
     
 }
