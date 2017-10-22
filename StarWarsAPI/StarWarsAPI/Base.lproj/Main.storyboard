@@ -75,6 +75,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="T0q-kB-MMQ" kind="show" trigger="accessoryAction" id="pnV-Ok-n0l"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -86,6 +89,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dMc-Rb-ZDZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="153" y="1010"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="PM6-jR-3Uh">
+            <objects>
+                <viewController id="T0q-kB-MMQ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ghG-Lw-8lJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="sgt-Hp-S1L"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Yly-B5-4jO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0JP-1U-Dbr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="938" y="1021"/>
         </scene>
         <!--Star Wars Planets Table View Controller-->
         <scene sceneID="tuS-04-Tn0">
@@ -103,6 +124,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="hN8-Q2-igm" kind="show" id="Hoc-Jg-x7o"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -114,6 +138,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fQm-l8-1mY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1360.8" y="600.44977511244383"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dKO-UE-nJK">
+            <objects>
+                <viewController id="hN8-Q2-igm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VS3-Sz-lsc"/>
+                        <viewControllerLayoutGuide type="bottom" id="M90-mY-GhY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bmp-eC-s5a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ak1-am-eJM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2319" y="600"/>
         </scene>
         <!--Star Wars People Table View Controller-->
         <scene sceneID="k9q-4b-avb">
