@@ -10,13 +10,13 @@ import Foundation
 
 class StarWarsPeople {
     
-    var name: String
-    var height: String
-    var weight: String
-    var hairColor: String
-    var skinColor: String
-    var eyeColor: String
-    var birthYear: String
+    var name: String?
+    var height: String?
+    var weight: String?
+    var hairColor: String?
+    var skinColor: String?
+    var eyeColor: String?
+    var birthYear: String?
     
     init(name: String, height: String, weight: String, hairColor: String, skinColor: String, eyeColor: String, birthYear: String) {
         self.name = name
