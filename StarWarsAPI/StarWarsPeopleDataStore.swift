@@ -13,7 +13,12 @@ class StarWarsPeopleDataStore{
     static let sharedInstance = StarWarsPeopleDataStore()
     private init() {}
     
+    var starWarsPeopleArray = [StarWarsPeople]()
     
+    func getStarWarsPeopleInformation (completion:@escaping ([MeetupEvent]) -> ()){
+        
+        
+    }
     
     
     
