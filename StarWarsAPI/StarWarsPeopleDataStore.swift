@@ -15,8 +15,12 @@ class StarWarsPeopleDataStore{
     
     var starWarsPeopleArray = [StarWarsPeople]()
     
-    func getStarWarsPeopleInformation (completion:@escaping ([MeetupEvent]) -> ()){
+    func getStarWarsPeopleInformation (completion:@escaping ([StarWarsPeople]) -> ()){
         
+        StarWarsPeopleAPIClient.getStarWarsPeopleInformation { (jsonArray) in
+            
+            
+        }
         
     }
     
