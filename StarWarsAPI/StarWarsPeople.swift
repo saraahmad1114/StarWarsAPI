@@ -17,8 +17,9 @@ class StarWarsPeople {
     var skinColor: String?
     var eyeColor: String?
     var birthYear: String?
+    var gender: String?
     
-    init(name: String, height: String, weight: String, hairColor: String, skinColor: String, eyeColor: String, birthYear: String) {
+    init(name: String, height: String, weight: String, hairColor: String, skinColor: String, eyeColor: String, birthYear: String, gender: String) {
         self.name = name
         self.height = height
         self.weight = weight
@@ -26,6 +27,7 @@ class StarWarsPeople {
         self.skinColor = skinColor
         self.eyeColor = eyeColor
         self.birthYear = birthYear
+        self.gender = gender
     }
     
 }
