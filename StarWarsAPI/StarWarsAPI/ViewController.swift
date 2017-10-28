@@ -41,8 +41,6 @@ class ViewController: UIViewController {
         self.starshipsButton.layer.borderWidth = 1
         self.starshipsButton.layer.borderColor = UIColor.white.cgColor
         
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
