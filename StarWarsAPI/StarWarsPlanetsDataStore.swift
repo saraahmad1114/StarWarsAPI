@@ -52,10 +52,8 @@ class StarWarsPlanetsDataStore{
                 print("************************************")
                 
                 print(self.starWarsPlanetsArray.count)
-                
-                
-                
             }
+            completion(self.starWarsPlanetsArray)
         }
         
         
