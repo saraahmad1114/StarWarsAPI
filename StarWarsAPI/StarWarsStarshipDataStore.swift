@@ -31,16 +31,35 @@ class StarWarsStarshipDataStore{
                 
                 guard let starShipCost = unwrappedSingleDictionary["cost_in_credits"] as? String else{print("starShipCost did not unwrap"); return}
                 
-                guard let starShipLength = unwrappedSingleDictionary["lenght"] as? String else {print("starShipLength did not unwrap"); return}
+                guard let starShipLength = unwrappedSingleDictionary["length"] as? String else {print("starShipLength did not unwrap"); return}
                 
+                guard let starShipAtmosphericSpeed = unwrappedSingleDictionary["max_atmosphering_speed"] as? String else {print("starShipAtmosphericSpeed did not unwrap"); return}
                 
+                guard let starShipCrew = unwrappedSingleDictionary["crew"] as? String else {print("starShipCrew did not unwrap"); return}
                 
+                guard let starShipCargoCapacity = unwrappedSingleDictionary["cargo_capacity"] as? String else {print("starShipCargoCapacity did not unwrap"); return}
                 
+                guard let starShipClass = unwrappedSingleDictionary["starship_class"] as? String else {print("starShipClass did not unwrap"); return}
                 
+                let starShipObject = StarWarsStarship.init(name: starShipName, model: starShipModel!, manufacturer: starShipManufacturer, costInCredits: starShipCost, length: starShipLength, maxAtmosphericSpeed: starShipAtmosphericSpeed, crew: starShipCrew, cargoCapacity: starShipCargoCapacity, starshipClass: starShipClass)
                 
+                self.starWarsStarshipArray.append(starShipObject)
+            
+                print("*******************************************************")
+                print(starShipObject.name)
+                print(starShipObject.model)
+                print(starShipObject.manufacturer)
+                print(starShipObject.costInCredits)
+                print(starShipObject.length)
+                print(starShipObject.maxAtmosphericSpeed)
+                print(starShipObject.crew)
+                print(starShipObject.cargoCapacity)
+                print(starShipObject.starshipClass)
+                print("*******************************************************")
                 
-                
+                self.starWarsStarshipArray.count
             }
+            completion(self.starWarsStarshipArray)
         }
         
         
