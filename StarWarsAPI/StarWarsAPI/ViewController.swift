@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var starshipsButton: UIButton!
     
-    let store = StarWarsStarshipDataStore.sharedInstance
+    let store = StarWarsPlanetsDataStore.sharedInstance
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,10 +42,10 @@ class ViewController: UIViewController {
         self.starshipsButton.layer.borderWidth = 1
         self.starshipsButton.layer.borderColor = UIColor.white.cgColor
         
-        self.store.getStarWarsStarshipInformation { (starShipArray) in
-            print("******************")
-            print(starShipArray)
-            print("******************")
+        self.store.getStarWarsPlanetsInformation { (planetsArray) in
+            print("*****************")
+            print(planetsArray)
+            print("*****************")
         }
     }
 
