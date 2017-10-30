@@ -25,9 +25,17 @@ class StarWarsStarshipDataStore{
                 
                 guard let starShipName = unwrappedSingleDictionary["name"] as? String else {print("starShipName did not unwrap"); return}
                 
-                guard starShipModel = unwrappedSingleDictionary["model"] as? String else {print("starShipModel did not unwrap"); return}
+                guard let starShipModel = unwrappedSingleDictionary["model"] as? String? else {print("starShipModel did not unwrap"); return}
                 
-                guard 
+                guard let starShipManufacturer = unwrappedSingleDictionary["manufacturer"] as? String else{print("starShipManufacturer did not unwrap"); return}
+                
+                guard let starShipCost = unwrappedSingleDictionary["cost_in_credits"] as? String else{print("starShipCost did not unwrap"); return}
+                
+                guard let starShipLength = unwrappedSingleDictionary["lenght"] as? String else {print("starShipLength did not unwrap"); return}
+                
+                
+                
+                
                 
                 
                 
