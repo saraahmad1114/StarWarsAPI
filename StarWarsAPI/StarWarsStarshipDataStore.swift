@@ -57,15 +57,11 @@ class StarWarsStarshipDataStore{
                 print(starShipObject.starshipClass)
                 print("*******************************************************")
                 
-                self.starWarsStarshipArray.count
+                print(self.starWarsStarshipArray.count)
             }
             completion(self.starWarsStarshipArray)
         }
         
-        
     }
-    
-    
-    
-    
+     
 }
