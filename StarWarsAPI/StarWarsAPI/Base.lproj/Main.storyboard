@@ -106,7 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0JP-1U-Dbr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="938" y="1021"/>
+            <point key="canvasLocation" x="988" y="1010"/>
         </scene>
         <!--Star Wars Planets Table View Controller-->
         <scene sceneID="tuS-04-Tn0">
@@ -137,7 +137,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fQm-l8-1mY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1360.8" y="600.44977511244383"/>
+            <point key="canvasLocation" x="1706" y="618"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="dKO-UE-nJK">
@@ -155,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ak1-am-eJM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2319" y="600"/>
+            <point key="canvasLocation" x="2498" y="618"/>
         </scene>
         <!--Star Wars People Table View Controller-->
         <scene sceneID="k9q-4b-avb">
