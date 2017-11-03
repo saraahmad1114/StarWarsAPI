@@ -18,16 +18,14 @@ class StarWarsPlanet {
     var terrain: String?
     var population: String?
     
-    init(name: String, rotationPeriod: String, orbitalPeriod: String, diameter: String, gravity: String, terrain: String, population: String) {
-        
-        self.name = name
-        self.rotationPeriod = rotationPeriod
-        self.orbitalPeriod = orbitalPeriod
-        self.diameter = diameter
-        self.gravity = gravity
-        self.terrain = terrain
-        self.population = population
-        
+    init(jsonDictionary: [String: Any]) {
+        self.name = jsonDictionary["name"] as? String
+        self.rotationPeriod = jsonDictionary["rotation_period"] as? String
+        self.orbitalPeriod = jsonDictionary["orbital_period"] as? String
+        self.diameter = jsonDictionary["diameter"] as? String
+        self.gravity = jsonDictionary["gravity"] as? String
+        self.terrain = jsonDictionary["terrain"] as? String
+        self.population = jsonDictionary["population"] as? String
     }
     
     

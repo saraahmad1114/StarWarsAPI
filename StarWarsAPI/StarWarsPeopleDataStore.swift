@@ -23,19 +23,19 @@ class StarWarsPeopleDataStore{
                 
                 guard let unwrappedSingleDictionary = singleDictionary as? [String: Any] else {print("singleDictionary did not unwrap"); return}
                 
-                let singleStarWarsObjectArray = StarWarsPeople.init(jsonDictionary: unwrappedSingleDictionary)
+                let singleStarWarsObject = StarWarsPeople.init(jsonDictionary: unwrappedSingleDictionary)
 
-                self.starWarsPeopleArray.append(singleStarWarsObjectArray)
+                self.starWarsPeopleArray.append(singleStarWarsObject)
                 
                 print("*******************************************************")
-                print(singleStarWarsObjectArray.name)
-                print(singleStarWarsObjectArray.height)
-                print(singleStarWarsObjectArray.weight)
-                print(singleStarWarsObjectArray.hairColor)
-                print(singleStarWarsObjectArray.skinColor)
-                print(singleStarWarsObjectArray.eyeColor)
-                print(singleStarWarsObjectArray.birthYear)
-                print(singleStarWarsObjectArray.gender)
+                print(singleStarWarsObject.name)
+                print(singleStarWarsObject.height)
+                print(singleStarWarsObject.weight)
+                print(singleStarWarsObject.hairColor)
+                print(singleStarWarsObject.skinColor)
+                print(singleStarWarsObject.eyeColor)
+                print(singleStarWarsObject.birthYear)
+                print(singleStarWarsObject.gender)
                 print("*******************************************************")
                 
                 print(self.starWarsPeopleArray.count)
@@ -45,7 +45,5 @@ class StarWarsPeopleDataStore{
         }
         
     }
-    
-    
-    
+
 }
