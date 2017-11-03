@@ -20,16 +20,16 @@ class StarWarsStarship{
     var cargoCapacity: String?
     var starshipClass: String?
     
-    init(name: String, model: String, manufacturer: String, costInCredits: String, length: String, maxAtmosphericSpeed: String, crew: String, cargoCapacity: String, starshipClass: String) {
-        self.name = name
-        self.model = model
-        self.manufacturer = manufacturer
-        self.costInCredits = costInCredits
-        self.length = length
-        self.maxAtmosphericSpeed = maxAtmosphericSpeed
-        self.crew = crew
-        self.cargoCapacity = cargoCapacity
-        self.starshipClass = starshipClass
+    init(jsonDictionary: [String: Any]) {
+        self.name = jsonDictionary["name"] as? String
+        self.model = jsonDictionary["model"] as? String
+        self.manufacturer = jsonDictionary["manufacturer"] as? String
+        self.costInCredits = jsonDictionary["cost_in_credits"] as? String
+        self.length = jsonDictionary["length"] as? String
+        self.maxAtmosphericSpeed = jsonDictionary["max_atmosphering_speed"] as? String
+        self.crew = jsonDictionary["crew"] as? String
+        self.cargoCapacity = jsonDictionary["cargo_capacity"] as? String
+        self.starshipClass = jsonDictionary["starship_class"] as? String
     }
     
 }
