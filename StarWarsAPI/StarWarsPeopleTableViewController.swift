@@ -10,7 +10,7 @@ import UIKit
 
 class StarWarsPeopleTableViewController: UITableViewController {
     
-    //let store = StarWarsPeopleDataStore.sharedInstance
+    let store = StarWarsPeopleDataStore.sharedInstance
 
     override func viewDidLoad() {
         super.viewDidLoad()

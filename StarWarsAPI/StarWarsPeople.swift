@@ -19,15 +19,15 @@ class StarWarsPeople {
     var birthYear: String?
     var gender: String?
     
-    init(name: String, height: String, weight: String, hairColor: String, skinColor: String, eyeColor: String, birthYear: String, gender: String) {
-        self.name = name
-        self.height = height
-        self.weight = weight
-        self.hairColor = hairColor
-        self.skinColor = skinColor
-        self.eyeColor = eyeColor
-        self.birthYear = birthYear
-        self.gender = gender
+    init(jsonDictionary: [String: Any]) {
+        self.name = jsonDictionary["name"] as? String
+        self.height = jsonDictionary["height"] as? String
+        self.weight = jsonDictionary["mass"] as? String
+        self.hairColor = jsonDictionary["hair_color"] as? String
+        self.skinColor = jsonDictionary["skin_color"] as? String
+        self.eyeColor = jsonDictionary["eye_color"] as? String
+        self.birthYear = jsonDictionary["birth_year"] as? String
+        self.gender = jsonDictionary["gender"] as? String
     }
     
 }
