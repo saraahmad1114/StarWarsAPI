@@ -9,6 +9,8 @@
 import UIKit
 
 class StarWarsPlanetsTableViewController: UITableViewController {
+    
+    let store = StarWarsPlanetsDataStore.sharedInstance
 
     override func viewDidLoad() {
         super.viewDidLoad()
