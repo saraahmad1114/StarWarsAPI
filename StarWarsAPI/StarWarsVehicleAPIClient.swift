@@ -10,11 +10,11 @@ import Foundation
 
 class StarWarsVehicleAPIClient {
     
-    class func getStarWarsVehicleInformation(completion: @escaping(Array<Any>)-> ()){
+    class func getStarWarsVehicleInformation(page: Int, completion: @escaping(Array<Any>)-> ()){
         
         var jsonArray = Array<Any>()
     
-        let url = "https://swapi.co/api/vehicles"
+        let url = "https://swapi.co/api/vehicles/?page=\(page)"
         
         let convertedUrl = URL(string: url)
         
