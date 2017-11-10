@@ -10,11 +10,11 @@ import Foundation
 
 class StarWarsPeopleAPIClient{
     
-    class func getStarWarsPeopleInformation (completion:@escaping (Array<Any>)-> ()){
+    class func getStarWarsPeopleInformation (page: Int, completion:@escaping (Array<Any>)-> ()){
         
         var starWarsPeopleArray = Array<Any>()
         
-        let starWarsPeopleURL = "https://swapi.co/api/people"
+        let starWarsPeopleURL = "https://swapi.co/api/people/?page=\(page)"
 
         let convertedStarWarsPeopleURL = URL(string: starWarsPeopleURL)
         
