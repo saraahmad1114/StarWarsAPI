@@ -10,9 +10,9 @@ import Foundation
 
 class StarWarsFilmsAPIClient{
     
-    class func getStarWarsFilmsInformation (completion:@escaping([String: Any]) -> ()){
+    class func getStarWarsFilmsInformation (completion:@escaping(Array<Any>) -> ()){
         
-        var filmsJSon = [String: Any]()
+        var filmsJSonArray = Array<Any>()
         
         let filmsUrl = "https://swapi.co/api/films"
         
@@ -30,9 +30,13 @@ class StarWarsFilmsAPIClient{
             
             guard let uwnrappedJsonDictionary = jsonDictionary else {print("jsonDictionary did not unwrap"); return}
             
-            filmsJSon =  uwnrappedJsonDictionary
+            let resultsArray = uwnrappedJsonDictionary["results"] as? Array<Any>
             
-            completion(filmsJSon)
+            guard let unwrappedResultsArray = resultsArray else {print("resultsArray did not unwrap"); return}
+            
+            filmsJSonArray =  unwrappedResultsArray
+            
+            completion(filmsJSonArray)
         }
         task.resume()
     }

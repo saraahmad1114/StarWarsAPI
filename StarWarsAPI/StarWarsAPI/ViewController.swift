@@ -16,8 +16,6 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var starshipsButton: UIButton!
     
-    //let store = StarWarsPlanetsDataStore.sharedInstance
-
     override func viewDidLoad() {
         super.viewDidLoad()
     
