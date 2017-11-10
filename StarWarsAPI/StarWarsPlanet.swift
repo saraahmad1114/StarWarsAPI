@@ -19,17 +19,23 @@ class StarWarsPlanet {
     var population: String?
     
     init(jsonDictionary: [String: Any]) {
-        self.name = jsonDictionary["name"] as? String
-        self.rotationPeriod = jsonDictionary["rotation_period"] as? String
-        self.orbitalPeriod = jsonDictionary["orbital_period"] as? String
-        self.diameter = jsonDictionary["diameter"] as? String
-        self.gravity = jsonDictionary["gravity"] as? String
-        self.terrain = jsonDictionary["terrain"] as? String
-        self.population = jsonDictionary["population"] as? String
+       guard let name = jsonDictionary["name"] as? String else { print("did not unwrap"); return }
+       guard let rotationPeriod = jsonDictionary["rotation_period"] as? String else { print("did not unwrap"); return }
+       guard let orbitalPeriod = jsonDictionary["orbital_period"] as? String else { print("did not unwrap"); return }
+       guard let diameter = jsonDictionary["diameter"] as? String else { print("did not unwrap"); return }
+       guard let gravity = jsonDictionary["gravity"] as? String else { print("did not unwrap"); return }
+       guard let terrain = jsonDictionary["terrain"] as? String else { print("did not unwrap"); return }
+       guard let population = jsonDictionary["population"] as? String else { print("did not unwrap"); return }
+        
+        self.name = name
+        self.rotationPeriod = rotationPeriod
+        self.orbitalPeriod = orbitalPeriod
+        self.diameter = diameter
+        self.gravity = gravity
+        self.terrain = terrain
+        self.population = population
+        
+        
     }
-    
-    
-    
-    
-    
+ 
 }
