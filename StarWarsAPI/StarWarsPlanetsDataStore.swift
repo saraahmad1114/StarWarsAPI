@@ -15,9 +15,9 @@ class StarWarsPlanetsDataStore{
     
     var starWarsPlanetsArray = [StarWarsPlanet]()
     
-    func getStarWarsPlanetsInformation (completion:@escaping ([StarWarsPlanet]) -> ()){
+    func getStarWarsPlanetsInformation (page: Int, completion:@escaping ([StarWarsPlanet]) -> ()){
         
-        StarWarsPlanetsAPIClient.getStarWarsPlanetsInformation { (starWarsPlanetsJsonArray) in
+        StarWarsPlanetsAPIClient.getStarWarsPlanetsInformation(page: page) { (starWarsPlanetsJsonArray) in
             
             for singleDictionary in starWarsPlanetsJsonArray{
                 

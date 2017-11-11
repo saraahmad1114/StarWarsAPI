@@ -15,9 +15,9 @@ class StarWarsStarshipDataStore{
     
     var starWarsStarshipArray = [StarWarsStarship]()
     
-    func getStarWarsStarshipInformation (completion:@escaping ([StarWarsStarship]) -> ()){
+    func getStarWarsStarshipInformation (page: Int, completion:@escaping ([StarWarsStarship]) -> ()){
         
-        StarWarsStarshipsAPIClient.getStarWarsStarshipsInformation { (starWarsStarshipsJsonArray) in
+        StarWarsStarshipsAPIClient.getStarWarsStarshipsInformation(page: <#Int#>) { (starWarsStarshipsJsonArray) in
             for singleDictionary in starWarsStarshipsJsonArray{
                 
                 guard let unwrappedSingleDictionary = singleDictionary as? [String: Any] else{print("singleDictionary did not unwrap"); return

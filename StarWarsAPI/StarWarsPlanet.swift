@@ -21,7 +21,6 @@ class StarWarsPlanet {
     init(jsonDictionary: [String: Any]) {
         
        guard
-        
         let name = jsonDictionary["name"] as? String,
         let rotationPeriod = jsonDictionary["rotation_period"] as? String,
         let orbitalPeriod = jsonDictionary["orbital_period"] as? String,

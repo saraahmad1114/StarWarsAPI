@@ -15,9 +15,9 @@ class StarWarsPeopleDataStore{
     
     var starWarsPeopleArray = [StarWarsPeople]()
     
-    func getStarWarsPeopleInformation (completion:@escaping ([StarWarsPeople]) -> ()){
+    func getStarWarsPeopleInformation (page: Int, completion:@escaping ([StarWarsPeople]) -> ()){
         
-        StarWarsPeopleAPIClient.getStarWarsPeopleInformation { (starWarsArray) in
+        StarWarsPeopleAPIClient.getStarWarsPeopleInformation(page: <#Int#>) { (starWarsArray) in
             
             for singleDictionary in starWarsArray{
                 
