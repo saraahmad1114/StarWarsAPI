@@ -21,13 +21,14 @@ class StarWarsPlanetsDataStore{
             
             for singleDictionary in starWarsPlanetsJsonArray{
                 
-                guard let unwrapppedSingleDictionary = singleDictionary as? [String: Any] else {print("singleDictionary did not unwrap"); return}
+                guard let unwrappedSingleDictionary = singleDictionary as? [String: Any] else {print("singleDictionary did not unwrap"); return}
                 
-                let planetObject = StarWarsPlanet.init(jsonDictionary: unwrapppedSingleDictionary)
+                let planetObject = StarWarsPlanet.init(jsonDictionary: unwrappedSingleDictionary)
                 
                 self.starWarsPlanetsArray.append(planetObject)
                 
                 print("************************************")
+                
                 print(planetObject.name)
                 print(planetObject.rotationPeriod)
                 print(planetObject.orbitalPeriod)
@@ -38,10 +39,10 @@ class StarWarsPlanetsDataStore{
                 print("************************************")
                 
                 print(self.starWarsPlanetsArray.count)
+                
             }
             completion(self.starWarsPlanetsArray)
         }
-        
         
     }
     

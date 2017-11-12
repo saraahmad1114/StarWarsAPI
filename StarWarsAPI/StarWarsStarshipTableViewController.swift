@@ -15,14 +15,14 @@ class StarWarsStarshipTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.store.getStarWarsStarshipInformation { (starWarsStarArrayParsed) in
-            print("************************")
-            print(starWarsStarArrayParsed)
-            print("************************")
-            OperationQueue.main.addOperation {
-                self.tableView.reloadData()
-            }
-        }
+//        self.store.getStarWarsStarshipInformation { (starWarsStarArrayParsed) in
+//            print("************************")
+//            print(starWarsStarArrayParsed)
+//            print("************************")
+//            OperationQueue.main.addOperation {
+//                self.tableView.reloadData()
+//            }
+//        }
     }
 
     override func didReceiveMemoryWarning() {
