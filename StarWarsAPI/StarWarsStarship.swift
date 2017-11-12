@@ -44,6 +44,7 @@ class StarWarsStarship{
         self.maxAtmosphericSpeed = maxAtmosphericSpeed
         self.crew = crew
         self.cargoCapacity = cargoCapacity
-        self.starshipClass = starshipClass
+        self.starshipClass = starShipClass
+    }
     
 }
