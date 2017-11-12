@@ -20,14 +20,26 @@ class StarWarsPeople {
     var gender: String?
     
     init(jsonDictionary: [String: Any]) {
-        self.name = jsonDictionary["name"] as? String
-        self.height = jsonDictionary["height"] as? String
-        self.weight = jsonDictionary["mass"] as? String
-        self.hairColor = jsonDictionary["hair_color"] as? String
-        self.skinColor = jsonDictionary["skin_color"] as? String
-        self.eyeColor = jsonDictionary["eye_color"] as? String
-        self.birthYear = jsonDictionary["birth_year"] as? String
-        self.gender = jsonDictionary["gender"] as? String
+        guard
+            let name =  jsonDictionary["name"] as? String,
+            let height = jsonDictionary["height"] as? String,
+            let weight = jsonDictionary["mass"] as? String,
+            let hairColor = jsonDictionary["hair_color"] as? String,
+            let skinColor = jsonDictionary["skin_color"] as? String,
+            let eyeColor = jsonDictionary["eye_color"] as? String,
+            let birthYear = jsonDictionary["birth_year"] as? String,
+            let gender  = jsonDictionary["gender"] as? String
+        
+            else {print("did not unwrap"); return}
+        
+        self.name = name
+        self.height = height
+        self.weight = weight
+        self.hairColor = hairColor
+        self.skinColor = skinColor
+        self.eyeColor = eyeColor
+        self.birthYear = birthYear
+        self.gender = gender
     }
     
 }
