@@ -14,9 +14,9 @@ class StarWarsFilmsDataStore {
     private init() {}
     
     var starWarsFilmsArray = [StarWarsFilms]()
-    var page = 1
     
-    func getStarWarsFilms (page: Int, completion:@escaping ([StarWarsFilms]) -> ()){
+    
+    func getStarWarsFilms ( completion:@escaping ([StarWarsFilms]) -> ()){
         
         StarWarsFilmsAPIClient.getStarWarsFilmsInformation { (fiilmsArray) in
             
@@ -44,9 +44,6 @@ class StarWarsFilmsDataStore {
         
     }
     
-    func retrieveNextPageInformation()
-    {
-        self.page += 1
-    }
+   
   
 }
