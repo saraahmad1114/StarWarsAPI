@@ -43,5 +43,10 @@ class StarWarsFilmsDataStore {
         }
         
     }
+    
+    func retrieveNextPageInformation()
+    {
+        self.page += 1
+    }
   
 }
