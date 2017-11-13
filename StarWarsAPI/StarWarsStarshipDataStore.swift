@@ -14,6 +14,7 @@ class StarWarsStarshipDataStore{
     private init() {}
     
     var starWarsStarshipArray = [StarWarsStarship]()
+    var page = 1 
     
     func getStarWarsStarshipInformation (page: Int, completion:@escaping ([StarWarsStarship]) -> ()){
         
