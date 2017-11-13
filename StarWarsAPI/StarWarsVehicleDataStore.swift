@@ -13,6 +13,7 @@ class StarWarsVehicleDataStore{
     static let sharedInstance = StarWarsVehicleDataStore()
     private init() {}
     var starWarsVehicleArray = [StarWarsVehicles]()
+    var page = 1
     
     func getStarWarsVehicles(page: Int, completion:@escaping ([StarWarsVehicles]) -> ()){
         
@@ -43,6 +44,11 @@ class StarWarsVehicleDataStore{
         }
         
         
+    }
+    
+    func retrieveNextPageInformation()
+    {
+        self.page += 1
     }
     
 }
