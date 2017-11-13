@@ -46,5 +46,10 @@ class StarWarsStarshipDataStore{
         }
         
     }
+    
+    func retrieveNextPageInformation()
+    {
+        self.page += 1
+    }
      
 }

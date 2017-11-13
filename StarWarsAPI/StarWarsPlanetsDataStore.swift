@@ -14,7 +14,7 @@ class StarWarsPlanetsDataStore{
     private init() {}
     
     var starWarsPlanetsArray = [StarWarsPlanet]()
-    var page = 1 
+    var page = 1
     
     func getStarWarsPlanetsInformation (page: Int, completion:@escaping ([StarWarsPlanet]) -> ()){
         
@@ -45,6 +45,12 @@ class StarWarsPlanetsDataStore{
             completion(self.starWarsPlanetsArray)
         }
         
+    }
+    
+    
+    func retrieveNextPageInformation()
+    {
+        self.page += 1
     }
     
     

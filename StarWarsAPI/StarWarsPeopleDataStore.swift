@@ -46,5 +46,10 @@ class StarWarsPeopleDataStore{
         }
         
     }
+    
+    func retrieveNextPageInformation()
+    {
+        self.page += 1
+    }
 
 }
