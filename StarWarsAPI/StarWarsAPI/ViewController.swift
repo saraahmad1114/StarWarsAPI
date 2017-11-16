@@ -20,20 +20,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     
         self.view.backgroundColor = UIColor.black
+
+        self.peopleButton.layer.shadowColor = UIColor.black.cgColor
+        self.peopleButton.layer.shadowOffset = CGSize(width: 1000, height: 1000)
+        self.peopleButton.layer.masksToBounds = false
+        self.peopleButton.layer.shadowRadius = 5
         
-        //peopleButton
-//        self.peopleButton.backgroundColor = .yellow
-//        self.peopleButton.layer.cornerRadius = 8
-//        self.peopleButton.layer.borderWidth = 1
-//        self.peopleButton.layer.borderColor = UIColor.white.cgColor
-        
-        self.peopleButton.frame = CGRect(0, 0, 100, 100)
-        self.peopleButton.layer.borderColor = UIColor.white.cgColor
-        self.peopleButton.layer.borderWidth = 2
-        self.peopleButton.layer.cornerRadius = 50
-        self.peopleButton.setTitle("Star Wars People", for: [])
-        self.peopleButton.backgroundColor = UIColor.blue
-        self.peopleButton.setTitleColor(UIColor(red: 233/255, green: 64/255, blue: 87/255, alpha: 1), for: [])
+        self.peopleButton.layer.shadowOpacity = 0.5
+        self.peopleButton.layer.cornerRadius = self.peopleButton.frame.width / 2
+        self.peopleButton.backgroundColor = .white
 
         
         
