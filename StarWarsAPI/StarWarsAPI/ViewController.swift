@@ -33,11 +33,7 @@ class ViewController: UIViewController {
         
         
         
-        //planetsButton
-//        self.planetsButton.backgroundColor = .yellow
-//        self.planetsButton.layer.cornerRadius = 8
-//        self.planetsButton.layer.borderWidth = 1
-//        self.planetsButton.layer.borderColor = UIColor.white.cgColor
+
 
         //starshipsButton
 //        self.starshipsButton.backgroundColor = .yellow
