@@ -30,9 +30,6 @@ class ViewController: UIViewController {
         self.peopleButton.layer.cornerRadius = self.peopleButton.frame.width / 2
         self.peopleButton.backgroundColor = .white
 
-        
-        
-        
 
 
         //starshipsButton
@@ -41,11 +38,6 @@ class ViewController: UIViewController {
 //        self.starshipsButton.layer.borderWidth = 1
 //        self.starshipsButton.layer.borderColor = UIColor.white.cgColor
         
-        
-        //Vehicle Button
-        
-        //Species Button
-        //Films Button
        
     }
 
