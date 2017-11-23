@@ -20,6 +20,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     
         self.view.backgroundColor = UIColor.black
+        
+       UINavigationBar.appearance().barTintColor = UIColor.red
 
 //        self.peopleButton.layer.shadowColor = UIColor.black.cgColor
 //        self.peopleButton.layer.shadowOffset = CGSize(width: 1000, height: 1000)

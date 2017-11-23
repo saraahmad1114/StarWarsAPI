@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VqU-Tr-H5F">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hEb-m6-16U">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Star Wars -->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StarWarsAPI" customModuleProvider="target" sceneMemberID="viewController">
@@ -45,10 +45,25 @@
                                     <segue destination="aEb-xU-z6I" kind="show" id="doG-L5-gks"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDd-gw-RLG">
+                                <rect key="frame" x="159" y="307" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7L-aw-Nfb">
+                                <rect key="frame" x="158" y="339" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2I-YV-1D1">
+                                <rect key="frame" x="159" y="372" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="qaX-cq-hOS"/>
+                    <navigationItem key="navigationItem" title="Star Wars " id="qaX-cq-hOS"/>
                     <connections>
                         <outlet property="peopleButton" destination="swC-Ji-AOw" id="7um-lf-tmU"/>
                         <outlet property="planetsButton" destination="72A-er-xlf" id="iWy-RC-1lc"/>
@@ -57,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="476" y="138.98050974512745"/>
+            <point key="canvasLocation" x="815.20000000000005" y="138.98050974512745"/>
         </scene>
         <!--Star Wars Starship Table View Controller-->
         <scene sceneID="IxO-7z-Ebm">
@@ -137,7 +152,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fQm-l8-1mY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1706" y="618"/>
+            <point key="canvasLocation" x="2044" y="617.54122938530736"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="dKO-UE-nJK">
@@ -155,7 +170,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ak1-am-eJM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2498" y="618"/>
+            <point key="canvasLocation" x="2836" y="617.54122938530736"/>
         </scene>
         <!--Star Wars People Table View Controller-->
         <scene sceneID="k9q-4b-avb">
@@ -202,7 +217,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IS1-2h-fS9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1360.8" y="-101.19940029985008"/>
+            <point key="canvasLocation" x="1700" y="-101.19940029985008"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="udF-H1-NXX">
@@ -220,25 +235,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I4v-SO-Rnz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2372" y="-101"/>
+            <point key="canvasLocation" x="2711.1999999999998" y="-101.19940029985008"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="hp9-VS-B8y">
+        <scene sceneID="iF7-md-dSM">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VqU-Tr-H5F" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hEb-m6-16U" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tSQ-dj-sVA">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xyz-Wd-h11">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="lPn-I4-cXo"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hQe-wX-Njx"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Kep-s1-HXc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Q4-fm-dUq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-393" y="139"/>
+            <point key="canvasLocation" x="-143" y="139"/>
         </scene>
     </scenes>
 </document>
