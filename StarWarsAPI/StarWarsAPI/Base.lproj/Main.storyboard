@@ -26,7 +26,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="People"/>
                                 <connections>
-                                    <segue destination="Mhp-6j-vN2" kind="show" id="KAb-Br-B9b"/>
+                                    <segue destination="Mhp-6j-vN2" kind="show" identifier="" id="KAb-Br-B9b"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72A-er-xlf">
@@ -74,10 +74,10 @@
             </objects>
             <point key="canvasLocation" x="815.20000000000005" y="138.98050974512745"/>
         </scene>
-        <!--Star Wars Starship Table View Controller-->
+        <!--Starships-->
         <scene sceneID="IxO-7z-Ebm">
             <objects>
-                <tableViewController id="aEb-xU-z6I" customClass="StarWarsStarshipTableViewController" customModule="StarWarsAPI" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Starships" id="aEb-xU-z6I" customClass="StarWarsStarshipTableViewController" customModule="StarWarsAPI" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="tK0-eX-7xy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -105,10 +105,10 @@
             </objects>
             <point key="canvasLocation" x="153" y="1010"/>
         </scene>
-        <!--View Controller-->
+        <!--Starship Details -->
         <scene sceneID="PM6-jR-3Uh">
             <objects>
-                <viewController id="T0q-kB-MMQ" sceneMemberID="viewController">
+                <viewController title="Starship Details " id="T0q-kB-MMQ" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ghG-Lw-8lJ"/>
                         <viewControllerLayoutGuide type="bottom" id="sgt-Hp-S1L"/>
@@ -123,10 +123,10 @@
             </objects>
             <point key="canvasLocation" x="988" y="1010"/>
         </scene>
-        <!--Star Wars Planets Table View Controller-->
+        <!--Planets -->
         <scene sceneID="tuS-04-Tn0">
             <objects>
-                <tableViewController id="S0k-Gm-M5f" customClass="StarWarsPlanetsTableViewController" customModule="StarWarsAPI" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Planets " id="S0k-Gm-M5f" customClass="StarWarsPlanetsTableViewController" customModule="StarWarsAPI" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="VBJ-SW-CsI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -154,10 +154,10 @@
             </objects>
             <point key="canvasLocation" x="2044" y="617.54122938530736"/>
         </scene>
-        <!--View Controller-->
+        <!--Planet Details -->
         <scene sceneID="dKO-UE-nJK">
             <objects>
-                <viewController id="hN8-Q2-igm" sceneMemberID="viewController">
+                <viewController title="Planet Details " id="hN8-Q2-igm" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VS3-Sz-lsc"/>
                         <viewControllerLayoutGuide type="bottom" id="M90-mY-GhY"/>
@@ -172,10 +172,10 @@
             </objects>
             <point key="canvasLocation" x="2836" y="617.54122938530736"/>
         </scene>
-        <!--Star Wars People Table View Controller-->
+        <!--People -->
         <scene sceneID="k9q-4b-avb">
             <objects>
-                <tableViewController id="Mhp-6j-vN2" customClass="StarWarsPeopleTableViewController" customModule="StarWarsAPI" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="People " id="Mhp-6j-vN2" customClass="StarWarsPeopleTableViewController" customModule="StarWarsAPI" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="K9D-ri-NKj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -219,10 +219,10 @@
             </objects>
             <point key="canvasLocation" x="1700" y="-101.19940029985008"/>
         </scene>
-        <!--View Controller-->
+        <!--Person Details -->
         <scene sceneID="udF-H1-NXX">
             <objects>
-                <viewController id="qrX-pG-bnF" sceneMemberID="viewController">
+                <viewController title="Person Details " id="qrX-pG-bnF" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="La8-4w-YQf"/>
                         <viewControllerLayoutGuide type="bottom" id="Usl-M5-mv3"/>
@@ -242,7 +242,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hEb-m6-16U" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xyz-Wd-h11">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="xyz-Wd-h11">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
