@@ -15,12 +15,8 @@ class StarWarsPeopleTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.tableView.backgroundColor = UIColor.black
-        
-        
-        
-        self.store.getStarWarsPeopleInformation(page: page) { (starwarsPeopleArray) in
+        self.store.getStarWarsPeopleInformation(page: self.store.page) { (starwarsPeopleArray) in
             print("**************************")
             print(starwarsPeopleArray)
             print("**************************")
@@ -47,12 +43,10 @@ class StarWarsPeopleTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "peopleCell", for: indexPath)
         cell.textLabel?.textColor = UIColor.white
         cell.backgroundColor = UIColor.black
         cell.textLabel?.text = self.store.starWarsPeopleArray[indexPath.row].name
-
         return cell
     }
     

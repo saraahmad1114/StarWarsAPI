@@ -13,7 +13,16 @@ class StarWarsPlanetsTableViewController: UITableViewController {
     let store = StarWarsPlanetsDataStore.sharedInstance
 
     override func viewDidLoad() {
+        self.tableView.backgroundColor = UIColor.black
         super.viewDidLoad()
+        self.store.getStarWarsPlanetsInformation(page: self.store.page) { (planetsArray) in
+            print("********************")
+            print(planetsArray)
+            print("********************")
+            OperationQueue.main.addOperation {
+                self.tableView.reloadData()
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,13 +36,17 @@ class StarWarsPlanetsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return self.store.starWarsPlanetsArray.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "planetCell", for: indexPath)
+        
+        cell.textLabel?.textColor = UIColor.white
+        cell.backgroundColor = UIColor.black
 
+        cell.textLabel?.text = self.store.starWarsPlanetsArray[indexPath.row].name
 
         return cell
     }
