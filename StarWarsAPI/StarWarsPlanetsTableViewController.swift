@@ -41,13 +41,11 @@ class StarWarsPlanetsTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "planetCell", for: indexPath)
         
+        let cell = tableView.dequeueReusableCell(withIdentifier: "planetCell", for: indexPath)
         cell.textLabel?.textColor = UIColor.white
         cell.backgroundColor = UIColor.black
-
         cell.textLabel?.text = self.store.starWarsPlanetsArray[indexPath.row].name
-
         return cell
     }
     

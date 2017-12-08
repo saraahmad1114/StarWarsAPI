@@ -15,14 +15,15 @@ class StarWarsStarshipTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        self.store.getStarWarsStarshipInformation { (starWarsStarArrayParsed) in
-//            print("************************")
-//            print(starWarsStarArrayParsed)
-//            print("************************")
-//            OperationQueue.main.addOperation {
-//                self.tableView.reloadData()
-//            }
-//        }
+        self.tableView.backgroundColor = UIColor.black
+        self.store.getStarWarsStarshipInformation(page: self.store.page) { (starWarsStarArrayParsed) in
+            print("************************")
+            print(starWarsStarArrayParsed)
+            print("************************")
+            OperationQueue.main.addOperation {
+                self.tableView.reloadData()
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,8 +43,11 @@ class StarWarsStarshipTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "starshipCell", for: indexPath)
-
         
+        cell.textLabel?.textColor = UIColor.white
+        cell.backgroundColor = UIColor.black
+
+        cell.textLabel?.text = self.store.starWarsStarshipArray[indexPath.row].name
 
         return cell
     }
