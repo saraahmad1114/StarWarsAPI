@@ -11,9 +11,23 @@ import UIKit
 class StarWarsPeopleTableViewController: UITableViewController {
     
     let store = StarWarsPeopleDataStore.sharedInstance
+    var page = 1
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.tableView.backgroundColor = UIColor.black
+        
+        
+        
+        self.store.getStarWarsPeopleInformation(page: page) { (starwarsPeopleArray) in
+            print("**************************")
+            print(starwarsPeopleArray)
+            print("**************************")
+            OperationQueue.main.addOperation {
+                self.tableView.reloadData()
+            }
+        }
         
     }
 
@@ -28,12 +42,16 @@ class StarWarsPeopleTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return self.store.starWarsPeopleArray.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "peopleCell", for: indexPath)
+        cell.textLabel?.textColor = UIColor.white
+        cell.backgroundColor = UIColor.black
+        cell.textLabel?.text = self.store.starWarsPeopleArray[indexPath.row].name
 
         return cell
     }
