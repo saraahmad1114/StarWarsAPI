@@ -34,6 +34,7 @@ class StarWarsSpeciesAPIClient {
             guard let unwrappedResultsArray = resultsArray else {print("unwrappedResultsArray did not unwrap"); return}
             
             jsonArray = unwrappedResultsArray
+            
             completion(jsonArray)
         }
         task.resume()
