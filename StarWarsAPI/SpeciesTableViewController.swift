@@ -10,15 +10,21 @@ import UIKit
 
 class SpeciesTableViewController: UITableViewController {
     
-
+    let store = StarWarsSpeciesDataStore.sharedInstance
+    
     override func viewDidLoad() {
+        
+        self.tableView.backgroundColor = UIColor.black
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.store.getStarWarsFilmInformation(page: self.store.page) { (speciesArray) in
+            print("***************************")
+            print(speciesArray)
+            print("***************************")
+            OperationQueue.main.addOperation {
+                self.tableView.reloadData()
+            }
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,23 +36,23 @@ class SpeciesTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return self.store.starWarsSpeciesArray.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "speciesCell", for: indexPath)
+        cell.textLabel?.textColor = UIColor.white
+        cell.backgroundColor = UIColor.black
+        cell.textLabel?.text = self.store.starWarsSpeciesArray[indexPath.row].name
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
