@@ -414,7 +414,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="qrX-pG-bnF" kind="show" id="4c3-iu-bZO"/>
+                                    <segue destination="qrX-pG-bnF" kind="show" identifier="peopleDetailSegue" id="4c3-iu-bZO"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
