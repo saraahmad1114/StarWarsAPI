@@ -14,6 +14,7 @@ class StarWarsPeopleTableViewController: UITableViewController {
     var page = 1
 
     override func viewDidLoad() {
+       
         super.viewDidLoad()
         self.tableView.backgroundColor = UIColor.black
         self.store.getStarWarsPeopleInformation(page: self.store.page) { (starwarsPeopleArray) in
@@ -90,17 +91,20 @@ class StarWarsPeopleTableViewController: UITableViewController {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("Entered Here 1")
+        print("1")
         if segue.identifier == "peopleDetailSegue"{
-            print("Entered Here 2")
-            if let destinationVC = segue.destination as? PeopleDetailViewController{
-                print("Entered Here 3")
-                let path = self.tableView.indexPathForSelectedRow
-                destinationVC.starWarsPeopleObject = self.store.starWarsPeopleArray[(path)!]
-                print("Entered into here")
+            //print("2")
+            if let destinationVC = segue.destination as? PeopleDetailViewController {
+                print("3")
+                let neededIndexPath = self.tableView.indexPathForSelectedRow!
+                destinationVC.starWarsPeopleObject = self.store.starWarsPeopleArray[neededIndexPath.row]
+                
             }
+            
         }
+        
     }
     
 
