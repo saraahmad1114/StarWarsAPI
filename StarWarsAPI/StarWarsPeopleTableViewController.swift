@@ -97,9 +97,16 @@ class StarWarsPeopleTableViewController: UITableViewController {
         if segue.identifier == "peopleDetailSegue"{
             print("2")
             if let destinationVC = segue.destination as? PeopleDetailViewController {
+                
+                //Neither does this print
                 print("3")
                 let neededIndexPath = self.tableView.indexPathForSelectedRow!
                 destinationVC.starWarsPeopleObject = self.store.starWarsPeopleArray[neededIndexPath.row]
+                
+                //This portion won't be print
+                print("******************************************")
+                print(destinationVC.starWarsPeopleObject)
+                print("******************************************")
             }
         }
     }
