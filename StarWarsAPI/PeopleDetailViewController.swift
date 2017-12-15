@@ -10,7 +10,30 @@ import UIKit
 
 class PeopleDetailViewController: UIViewController {
     
-    var starWarsPeopleObject: StarWarsPeople?
+    //var starWarsPeopleObject: StarWarsPeople?
+    
+    var starWarsPeopleObject: StarWarsPeople? {
+        didSet {
+            self.updateNameLabel.text = self.starWarsPeopleObject?.name
+            self.updateHeightLabel.text = self.starWarsPeopleObject?.height
+            self.updateWeightLabel.text = self.starWarsPeopleObject?.weight
+            self.updateHairColorLabel.text = self.starWarsPeopleObject?.hairColor
+            self.updateSkinColorLabel.text = self.starWarsPeopleObject?.skinColor
+            self.updateEyeColorUpdate.text = self.starWarsPeopleObject?.eyeColor
+            self.updateBirthYearLabel.text = self.starWarsPeopleObject?.birthYear
+            self.updateGenderLabel.text = self.starWarsPeopleObject?.gender
+        }
+    }
+    
+    @IBOutlet weak var updateNameLabel: UILabel!
+    @IBOutlet weak var updateHeightLabel: UILabel!
+    @IBOutlet weak var updateWeightLabel: UILabel!
+    @IBOutlet weak var updateHairColorLabel: UILabel!
+    @IBOutlet weak var updateSkinColorLabel: UILabel!
+    @IBOutlet weak var updateEyeColorUpdate: UILabel!
+    @IBOutlet weak var updateBirthYearLabel: UILabel!
+    
+    @IBOutlet weak var updateGenderLabel: UILabel!
     let store = StarWarsPeopleDataStore.sharedInstance
 
     override func viewDidLoad() {

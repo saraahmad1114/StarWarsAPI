@@ -431,7 +431,7 @@
         <!--Person Details -->
         <scene sceneID="udF-H1-NXX">
             <objects>
-                <viewController title="Person Details " id="qrX-pG-bnF" sceneMemberID="viewController">
+                <viewController title="Person Details " id="qrX-pG-bnF" customClass="PeopleDetailViewController" customModule="StarWarsAPI" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="La8-4w-YQf"/>
                         <viewControllerLayoutGuide type="bottom" id="Usl-M5-mv3"/>
@@ -555,6 +555,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="updateBirthYearLabel" destination="TqG-6S-4CY" id="NE0-J0-1m4"/>
+                        <outlet property="updateEyeColorUpdate" destination="OBB-bf-LBN" id="KhB-rw-jI4"/>
+                        <outlet property="updateGenderLabel" destination="4wk-hD-Mh4" id="nls-Gd-Z21"/>
+                        <outlet property="updateHairColorLabel" destination="yhn-cq-cLa" id="G9t-Uq-LFY"/>
+                        <outlet property="updateHeightLabel" destination="syK-J7-Coe" id="7K6-i3-ALj"/>
+                        <outlet property="updateNameLabel" destination="vYy-fI-gWs" id="HJk-W5-Hbw"/>
+                        <outlet property="updateSkinColorLabel" destination="0L4-Id-zXG" id="x8u-2x-FJo"/>
+                        <outlet property="updateWeightLabel" destination="S4C-pp-PFi" id="Iic-OD-Kya"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I4v-SO-Rnz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
