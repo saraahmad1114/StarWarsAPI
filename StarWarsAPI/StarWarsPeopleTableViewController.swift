@@ -1,10 +1,7 @@
-//
 //  StarWarsPeopleTableViewController.swift
 //  StarWarsAPI
-//
 //  Created by Flatiron School on 10/19/17.
 //  Copyright © 2017 Flatiron School. All rights reserved.
-//
 
 import UIKit
 
@@ -14,7 +11,7 @@ class StarWarsPeopleTableViewController: UITableViewController {
     var page = 1
 
     override func viewDidLoad() {
-       
+        
         super.viewDidLoad()
         self.tableView.backgroundColor = UIColor.black
         self.store.getStarWarsPeopleInformation(page: self.store.page) { (starwarsPeopleArray) in
@@ -25,7 +22,6 @@ class StarWarsPeopleTableViewController: UITableViewController {
                 self.tableView.reloadData()
             }
         }
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -97,12 +93,10 @@ class StarWarsPeopleTableViewController: UITableViewController {
         if segue.identifier == "peopleDetailSegue"{
             print("2")
             if let destinationVC = segue.destination as? PeopleDetailViewController {
-                
                 //Neither does this print
                 print("3")
                 let neededIndexPath = self.tableView.indexPathForSelectedRow!
                 destinationVC.starWarsPeopleObject = self.store.starWarsPeopleArray[neededIndexPath.row]
-                
                 //This portion won't be print
                 print("******************************************")
                 print(destinationVC.starWarsPeopleObject)
