@@ -39,6 +39,18 @@ class PeopleDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        guard
+//            let name = self.starWarsPeopleObject?.name,
+//            let height = self.starWarsPeopleObject?.height,
+//            let weight = self.starWarsPeopleObject?.weight
+//            let hairColor = self.starWarsPeopleObject?.hairColor,
+//            let skinColor = self.starWarsPeopleObject?.skinColor,
+//            let eyeColor = self.starWarsPeopleObject?.eyeColor,
+//            let birthYear = self.starWarsPeopleObject?.birthYear,
+//            let gender = self.starWarsPeopleObject?.gender
+//
+//        else do {print("did not unwrap"); return}
+        
         
 
         // Do any additional setup after loading the view.
