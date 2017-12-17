@@ -62,16 +62,27 @@ class StarWarsStarshipTableViewController: UITableViewController {
         }
     }
 
-    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "planetSegue"{
+//            if let destinationVC = segue.destination as? PlanetDetailViewController{
+//                let neededIndexPath = self.tableView.indexPathForSelectedRow!
+//                destinationVC.starWarsPlanetObject = self.store.starWarsPlanetsArray[neededIndexPath.row]
+//            }
+//        }
+//    }
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        print("1")
+        if segue.identifier == "starshipSegue"{
+            print("2")
+            if let destinationVC = segue.destination as? StarshipDetailViewController{
+                print("3")
+                let neededIndexPath = self.tableView.indexPathForSelectedRow!
+                destinationVC.starShipObject = self.store.starWarsStarshipArray[neededIndexPath.row]
+            }
+        }
     }
-    */
+
 
 }
