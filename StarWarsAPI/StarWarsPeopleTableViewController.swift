@@ -15,9 +15,9 @@ class StarWarsPeopleTableViewController: UITableViewController {
         super.viewDidLoad()
         self.tableView.backgroundColor = UIColor.black
         self.store.getStarWarsPeopleInformation(page: self.store.page) { (starwarsPeopleArray) in
-            print("**************************")
-            print(starwarsPeopleArray)
-            print("**************************")
+//            print("**************************")
+//            print(starwarsPeopleArray)
+//            print("**************************")
             OperationQueue.main.addOperation {
                 self.tableView.reloadData()
             }
