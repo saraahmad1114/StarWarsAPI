@@ -28,8 +28,6 @@ class StarWarsPeopleTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
     }
 
-    // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -81,12 +79,6 @@ class StarWarsPeopleTableViewController: UITableViewController {
         // Return false if you do not want the item to be re-orderable.
         return true
     }
-    
-
-    
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "peopleDetailSegue"{
