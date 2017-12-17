@@ -23,15 +23,49 @@ class StarshipDetailViewController: UIViewController {
     @IBOutlet weak var starshipClassLabel: UILabel!
     
     
+    @IBOutlet weak var updateName: UILabel!
+    @IBOutlet weak var updateModel: UILabel!
+    @IBOutlet weak var updateManufacturer: UILabel!
+    @IBOutlet weak var updateCostInCreditsLabel: UILabel!
+    @IBOutlet weak var updateLengthLabel: UILabel!
+    @IBOutlet weak var updateMaxSpeed: UILabel!
+    @IBOutlet weak var updateCrewLabel: UILabel!
+    @IBOutlet weak var updateCargoCapacity: UILabel!
+    @IBOutlet weak var updateStarshipClassLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        guard let starObject = starShipObject else{print("did not unwrap"); return}
+        
+        guard let name = starObject.name,
+             let model = starObject.model,
+             let manufacturer = starObject.manufacturer,
+             let costInCredits = starObject.costInCredits,
+             let length = starObject.length,
+             let maxAtmosphericSpeed = starObject.maxAtmosphericSpeed,
+             let crew = starObject.crew,
+             let cargoCapacity = starObject.cargoCapacity,
+             let starshipClass = starObject.starshipClass
+            else {print("did not unwrap"); return}
+        
+        self.updateName.text = name
+        self.updateModel.text = model
+        self.updateManufacturer.text = manufacturer
+        self.updateCostInCreditsLabel.text = costInCredits
+        self.updateLengthLabel.text = length
+        self.updateMaxSpeed.text = maxAtmosphericSpeed
+        self.updateCrewLabel.text = crew
+        self.updateCargoCapacity.text = cargoCapacity
+        self.updateStarshipClassLabel.text = starshipClass
+        
+        
+     
+    
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 
