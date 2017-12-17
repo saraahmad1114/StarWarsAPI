@@ -17,9 +17,6 @@ class StarWarsStarshipTableViewController: UITableViewController {
 
         self.tableView.backgroundColor = UIColor.black
         self.store.getStarWarsStarshipInformation(page: self.store.page) { (starWarsStarArrayParsed) in
-            print("************************")
-            print(starWarsStarArrayParsed)
-            print("************************")
             OperationQueue.main.addOperation {
                 self.tableView.reloadData()
             }
@@ -70,6 +67,4 @@ class StarWarsStarshipTableViewController: UITableViewController {
             }
         }
     }
-
-
 }
