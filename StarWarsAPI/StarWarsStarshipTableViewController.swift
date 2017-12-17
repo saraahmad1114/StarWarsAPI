@@ -14,7 +14,6 @@ class StarWarsStarshipTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         self.tableView.backgroundColor = UIColor.black
         self.store.getStarWarsStarshipInformation(page: self.store.page) { (starWarsStarArrayParsed) in
             OperationQueue.main.addOperation {

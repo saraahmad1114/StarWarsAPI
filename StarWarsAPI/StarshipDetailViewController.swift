@@ -35,7 +35,28 @@ class StarshipDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.view.backgroundColor = UIColor.black
+        self.nameLabel.textColor = UIColor.white
+        self.modelLabel.textColor = UIColor.white
+        self.manufacturerLabel.textColor = UIColor.white
+        self.costInCreditsLabel.textColor = UIColor.white
+        self.lengthLabel.textColor = UIColor.white
+        self.maxAtmosphericSpeedLabel.textColor = UIColor.white
+        self.crewLabel.textColor = UIColor.white
+        self.cargoCapacitylabel.textColor = UIColor.white
+        self.starshipClassLabel.textColor = UIColor.white
+        
+        self.updateName.textColor = UIColor.white
+        self.updateModel.textColor = UIColor.white
+        self.updateManufacturer.textColor = UIColor.white
+        self.updateCostInCreditsLabel.textColor = UIColor.white
+        self.updateLengthLabel.textColor = UIColor.white
+        self.updateMaxSpeed.textColor = UIColor.white
+        self.updateCrewLabel.textColor = UIColor.white
+        self.updateCargoCapacity.textColor = UIColor.white
+        self.updateStarshipClassLabel.textColor = UIColor.white
+        
         guard let starObject = starShipObject else{print("did not unwrap"); return}
         
         guard let name = starObject.name,
