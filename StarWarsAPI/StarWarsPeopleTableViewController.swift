@@ -89,18 +89,10 @@ class StarWarsPeopleTableViewController: UITableViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("1")
         if segue.identifier == "peopleDetailSegue"{
-            print("2")
             if let destinationVC = segue.destination as? PeopleDetailViewController {
-                //Neither does this print
-                print("3")
                 let neededIndexPath = self.tableView.indexPathForSelectedRow!
                 destinationVC.starWarsPeopleObject = self.store.starWarsPeopleArray[neededIndexPath.row]
-                //This portion won't be print
-                print("******************************************")
-                print(destinationVC.starWarsPeopleObject)
-                print("******************************************")
             }
         }
     }
