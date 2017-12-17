@@ -28,19 +28,6 @@ class StarWarsPeopleDataStore{
 
                 self.starWarsPeopleArray.append(singleStarWarsObject)
                 
-//                print("*******************************************************")
-//                print(singleStarWarsObject.name)
-//                print(singleStarWarsObject.height)
-//                print(singleStarWarsObject.weight)
-//                print(singleStarWarsObject.hairColor)
-//                print(singleStarWarsObject.skinColor)
-//                print(singleStarWarsObject.eyeColor)
-//                print(singleStarWarsObject.birthYear)
-//                print(singleStarWarsObject.gender)
-//                print("*******************************************************")
-                
-                //print(self.starWarsPeopleArray.count)
-                
             }
             completion(self.starWarsPeopleArray)
         }
