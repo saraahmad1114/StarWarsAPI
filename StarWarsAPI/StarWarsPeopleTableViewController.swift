@@ -15,9 +15,6 @@ class StarWarsPeopleTableViewController: UITableViewController {
         super.viewDidLoad()
         self.tableView.backgroundColor = UIColor.black
         self.store.getStarWarsPeopleInformation(page: self.store.page) { (starwarsPeopleArray) in
-//            print("**************************")
-//            print(starwarsPeopleArray)
-//            print("**************************")
             OperationQueue.main.addOperation {
                 self.tableView.reloadData()
             }
@@ -45,6 +42,22 @@ class StarWarsPeopleTableViewController: UITableViewController {
         return cell
     }
     
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let lastElement = self.store.starWarsPeopleArray.count-1
+        if indexPath.row == lastElement{
+            loadMoreData()
+        }
+    }
+    
+    func loadMoreData(){
+        self.store.page = self.store.page + 1
+        self.store.getStarWarsPeopleInformation(page: self.store.page) { (newArray) in
+            OperationQueue.main.addOperation({
+                self.tableView.reloadData()
+            })
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.

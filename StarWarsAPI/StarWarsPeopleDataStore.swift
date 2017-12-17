@@ -27,7 +27,6 @@ class StarWarsPeopleDataStore{
                 let singleStarWarsObject = StarWarsPeople.init(jsonDictionary: unwrappedSingleDictionary)
 
                 self.starWarsPeopleArray.append(singleStarWarsObject)
-                
             }
             completion(self.starWarsPeopleArray)
         }
