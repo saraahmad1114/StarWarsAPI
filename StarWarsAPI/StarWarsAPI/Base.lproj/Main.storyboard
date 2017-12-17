@@ -356,7 +356,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="hN8-Q2-igm" kind="show" id="Hoc-Jg-x7o"/>
+                                    <segue destination="hN8-Q2-igm" kind="show" identifier="planetSegue" id="Hoc-Jg-x7o"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
