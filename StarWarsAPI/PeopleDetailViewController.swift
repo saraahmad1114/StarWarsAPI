@@ -21,10 +21,39 @@ class PeopleDetailViewController: UIViewController {
     @IBOutlet weak var updateBirthYearLabel: UILabel!
     @IBOutlet weak var updateGenderLabel: UILabel!
     
+    @IBOutlet weak var heightLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var weightLabel: UILabel!
+    @IBOutlet weak var hairColorLabel: UILabel!
+    @IBOutlet weak var skinColorLabel: UILabel!
+    @IBOutlet weak var eyeColorLabel: UILabel!
+    @IBOutlet weak var birthYearLabel: UILabel!
+    @IBOutlet weak var genderLabel: UILabel!
+    
     let store = StarWarsPeopleDataStore.sharedInstance
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.backgroundColor = UIColor.black
+        self.updateNameLabel.textColor = UIColor.white
+        self.updateHeightLabel.textColor = UIColor.white
+        self.updateWeightLabel.textColor = UIColor.white
+        self.updateHairColorLabel.textColor = UIColor.white
+        self.updateSkinColorLabel.textColor = UIColor.white
+        self.updateEyeColorUpdate.textColor = UIColor.white
+        self.updateBirthYearLabel.textColor = UIColor.white
+        self.updateGenderLabel.textColor = UIColor.white
+        
+        self.heightLabel.textColor = UIColor.white
+        self.nameLabel.textColor = UIColor.white
+        self.weightLabel.textColor = UIColor.white
+        self.hairColorLabel.textColor = UIColor.white
+        self.skinColorLabel.textColor = UIColor.white
+        self.eyeColorLabel.textColor = UIColor.white
+        self.eyeColorLabel.textColor = UIColor.white
+        self.birthYearLabel.textColor = UIColor.white
+        self.genderLabel.textColor = UIColor.white
         
         guard let starWarsObj = self.starWarsPeopleObject else {print("did not work"); return}
         

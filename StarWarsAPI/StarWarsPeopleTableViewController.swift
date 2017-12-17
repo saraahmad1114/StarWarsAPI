@@ -41,7 +41,6 @@ class StarWarsPeopleTableViewController: UITableViewController {
         return cell
     }
     
-    
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         let lastElement = self.store.starWarsPeopleArray.count-1
         if indexPath.row == lastElement{
@@ -58,7 +57,6 @@ class StarWarsPeopleTableViewController: UITableViewController {
         }
     }
 
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "peopleDetailSegue"{
             if let destinationVC = segue.destination as? PeopleDetailViewController {
@@ -68,5 +66,4 @@ class StarWarsPeopleTableViewController: UITableViewController {
         }
     }
     
-
 }

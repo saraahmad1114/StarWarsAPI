@@ -556,6 +556,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="birthYearLabel" destination="8Qf-tl-dqJ" id="0Am-pE-8Xo"/>
+                        <outlet property="eyeColorLabel" destination="lpb-qz-PLs" id="w7m-IB-QuB"/>
+                        <outlet property="genderLabel" destination="aE7-EO-ij9" id="aNu-19-T6u"/>
+                        <outlet property="hairColorLabel" destination="FAx-zu-jiM" id="jwH-Gw-dbm"/>
+                        <outlet property="heightLabel" destination="2ib-tz-LL0" id="GAz-bC-R4m"/>
+                        <outlet property="nameLabel" destination="9HK-cV-Ac0" id="tQW-jw-u3A"/>
+                        <outlet property="skinColorLabel" destination="Gtr-rK-BFC" id="Bg6-Id-Pmm"/>
                         <outlet property="updateBirthYearLabel" destination="TqG-6S-4CY" id="NE0-J0-1m4"/>
                         <outlet property="updateEyeColorUpdate" destination="OBB-bf-LBN" id="KhB-rw-jI4"/>
                         <outlet property="updateGenderLabel" destination="4wk-hD-Mh4" id="VpJ-as-wdU"/>
@@ -564,6 +571,7 @@
                         <outlet property="updateNameLabel" destination="vYy-fI-gWs" id="HJk-W5-Hbw"/>
                         <outlet property="updateSkinColorLabel" destination="0L4-Id-zXG" id="x8u-2x-FJo"/>
                         <outlet property="updateWeightLabel" destination="S4C-pp-PFi" id="Iic-OD-Kya"/>
+                        <outlet property="weightLabel" destination="hmm-Uw-TXF" id="S6A-ST-Akg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I4v-SO-Rnz" userLabel="First Responder" sceneMemberID="firstResponder"/>
