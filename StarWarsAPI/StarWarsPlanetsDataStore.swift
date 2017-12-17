@@ -31,9 +31,7 @@ class StarWarsPlanetsDataStore{
             }
             completion(self.starWarsPlanetsArray)
         }
-        
     }
-    
     
     func retrieveNextPageInformation()
     {
