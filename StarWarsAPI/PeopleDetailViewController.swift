@@ -10,10 +10,8 @@ import UIKit
 
 class PeopleDetailViewController: UIViewController {
     
-    
     var starWarsPeopleObject: StarWarsPeople?
 
-    
     @IBOutlet weak var updateNameLabel: UILabel!
     @IBOutlet weak var updateHeightLabel: UILabel!
     @IBOutlet weak var updateWeightLabel: UILabel!
@@ -23,14 +21,12 @@ class PeopleDetailViewController: UIViewController {
     @IBOutlet weak var updateBirthYearLabel: UILabel!
     @IBOutlet weak var updateGenderLabel: UILabel!
     
-    
     let store = StarWarsPeopleDataStore.sharedInstance
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        guard
-            let starWarsObj = self.starWarsPeopleObject else {print("did not work"); return}
+        guard let starWarsObj = self.starWarsPeopleObject else {print("did not work"); return}
         
         guard let name = starWarsObj.name else { print("did not unwrap"); return}
         guard let height = starWarsObj.height else { print("did not unwrap"); return}
