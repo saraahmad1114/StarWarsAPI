@@ -39,7 +39,7 @@ class StarWarsPeopleDataStore{
 //                print(singleStarWarsObject.gender)
 //                print("*******************************************************")
                 
-                print(self.starWarsPeopleArray.count)
+                //print(self.starWarsPeopleArray.count)
                 
             }
             completion(self.starWarsPeopleArray)
