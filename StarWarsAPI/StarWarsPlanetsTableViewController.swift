@@ -16,9 +16,6 @@ class StarWarsPlanetsTableViewController: UITableViewController {
         self.tableView.backgroundColor = UIColor.black
         super.viewDidLoad()
         self.store.getStarWarsPlanetsInformation(page: self.store.page) { (planetsArray) in
-            print("********************")
-            print(planetsArray)
-            print("********************")
             OperationQueue.main.addOperation {
                 self.tableView.reloadData()
             }
@@ -62,20 +59,13 @@ class StarWarsPlanetsTableViewController: UITableViewController {
         }
     }
 
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "planetSegue"{
-//            print("1")
             if let destinationVC = segue.destination as? PlanetDetailViewController{
-//                print("2")
                 let neededIndexPath = self.tableView.indexPathForSelectedRow!
-//                print("3")
                 destinationVC.starWarsPlanetObject = self.store.starWarsPlanetsArray[neededIndexPath.row]
-//                print(destinationVC.starWarsPlanetObject)
             }
             
         }
     }
-    
-
 }
