@@ -558,7 +558,7 @@
                     <connections>
                         <outlet property="updateBirthYearLabel" destination="TqG-6S-4CY" id="NE0-J0-1m4"/>
                         <outlet property="updateEyeColorUpdate" destination="OBB-bf-LBN" id="KhB-rw-jI4"/>
-                        <outlet property="updateGenderLabel" destination="4wk-hD-Mh4" id="nls-Gd-Z21"/>
+                        <outlet property="updateGenderLabel" destination="4wk-hD-Mh4" id="VpJ-as-wdU"/>
                         <outlet property="updateHairColorLabel" destination="yhn-cq-cLa" id="G9t-Uq-LFY"/>
                         <outlet property="updateHeightLabel" destination="syK-J7-Coe" id="7K6-i3-ALj"/>
                         <outlet property="updateNameLabel" destination="vYy-fI-gWs" id="HJk-W5-Hbw"/>
