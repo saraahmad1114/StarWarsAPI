@@ -28,19 +28,6 @@ class StarWarsPlanetsDataStore{
                 
                 self.starWarsPlanetsArray.append(planetObject)
                 
-                print("************************************")
-                
-                print(planetObject.name)
-                print(planetObject.rotationPeriod)
-                print(planetObject.orbitalPeriod)
-                print(planetObject.diameter)
-                print(planetObject.gravity)
-                print(planetObject.terrain)
-                print(planetObject.population)
-                print("************************************")
-                
-                print(self.starWarsPlanetsArray.count)
-                
             }
             completion(self.starWarsPlanetsArray)
         }
