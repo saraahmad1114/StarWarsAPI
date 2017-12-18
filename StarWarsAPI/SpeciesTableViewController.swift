@@ -19,9 +19,7 @@ class SpeciesTableViewController: UITableViewController {
             OperationQueue.main.addOperation {
                 self.tableView.reloadData()
             }
-            
         }
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -65,22 +63,6 @@ class SpeciesTableViewController: UITableViewController {
             })
         }
     }
-    
-//    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-//        let lastElement = self.store.starWarsSpeciesArray.count-1
-//        if indexPath.row == lastElement{
-//            loadMoreData()
-//        }
-//    }
-//    
-//    func loadMoreData(){
-//        self.store.page = self.store.page + 1
-//        self.store.(page: self.store.page) { (newArray) in
-//            OperationQueue.main.addOperation({
-//                self.tableView.reloadData()
-//            })
-//        }
-//    }
     
 
     /*
