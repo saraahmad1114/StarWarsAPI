@@ -13,22 +13,9 @@ class SpeciesTableViewController: UITableViewController {
     let store = StarWarsSpeciesDataStore.sharedInstance
     
     override func viewDidLoad() {
-        
         self.tableView.backgroundColor = UIColor.black
         super.viewDidLoad()
-//        self.store.getStarWarsFilmInformation(page: self.store.page) { (speciesArray) in
-//            print("***************************")
-//            print(speciesArray)
-//            print("***************************")
-//            OperationQueue.main.addOperation {
-//                self.tableView.reloadData()
-//            }
-//        }
-        
         self.store.getStarWarsSpeciesInformation(page: self.store.page) { (speciesArray) in
-            print("************************")
-            print(speciesArray)
-            print("************************")
             OperationQueue.main.addOperation {
                 self.tableView.reloadData()
             }
@@ -61,6 +48,22 @@ class SpeciesTableViewController: UITableViewController {
         cell.backgroundColor = UIColor.black
         cell.textLabel?.text = self.store.starWarsSpeciesArray[indexPath.row].name
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let lastElement = self.store.starWarsSpeciesArray.count-1
+        if indexPath.row == lastElement{
+            loadMoreData()
+        }
+    }
+    
+    func loadMoreData(){
+        self.store.page = self.store.page + 1
+        self.store.getStarWarsSpeciesInformation(page: self.store.page) { (speciesArray) in
+            OperationQueue.main.addOperation({
+                self.tableView.reloadData()
+            })
+        }
     }
     
 //    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
