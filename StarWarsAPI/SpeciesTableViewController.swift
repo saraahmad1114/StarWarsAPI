@@ -16,13 +16,23 @@ class SpeciesTableViewController: UITableViewController {
         
         self.tableView.backgroundColor = UIColor.black
         super.viewDidLoad()
-        self.store.getStarWarsFilmInformation(page: self.store.page) { (speciesArray) in
-            print("***************************")
+//        self.store.getStarWarsFilmInformation(page: self.store.page) { (speciesArray) in
+//            print("***************************")
+//            print(speciesArray)
+//            print("***************************")
+//            OperationQueue.main.addOperation {
+//                self.tableView.reloadData()
+//            }
+//        }
+        
+        self.store.getStarWarsSpeciesInformation(page: self.store.page) { (speciesArray) in
+            print("************************")
             print(speciesArray)
-            print("***************************")
+            print("************************")
             OperationQueue.main.addOperation {
                 self.tableView.reloadData()
             }
+            
         }
         
     }
@@ -53,41 +63,22 @@ class SpeciesTableViewController: UITableViewController {
         return cell
     }
     
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
+//    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+//        let lastElement = self.store.starWarsSpeciesArray.count-1
+//        if indexPath.row == lastElement{
+//            loadMoreData()
+//        }
+//    }
+//    
+//    func loadMoreData(){
+//        self.store.page = self.store.page + 1
+//        self.store.(page: self.store.page) { (newArray) in
+//            OperationQueue.main.addOperation({
+//                self.tableView.reloadData()
+//            })
+//        }
+//    }
+    
 
     /*
     // MARK: - Navigation

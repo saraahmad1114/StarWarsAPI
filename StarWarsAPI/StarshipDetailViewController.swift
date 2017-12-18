@@ -79,10 +79,7 @@ class StarshipDetailViewController: UIViewController {
         self.updateCrewLabel.text = crew
         self.updateCargoCapacity.text = cargoCapacity
         self.updateStarshipClassLabel.text = starshipClass
-        
-        
-     
-    
+
     }
 
     override func didReceiveMemoryWarning() {

@@ -17,7 +17,7 @@ class StarWarsSpeciesDataStore{
     var page = 1
     
     
-    func getStarWarsFilmInformation (page: Int, completion:@escaping ([StarWarsSpecies]) -> ()){
+    func getStarWarsSpeciesInformation (page: Int, completion:@escaping ([StarWarsSpecies]) -> ()){
         
         StarWarsSpeciesAPIClient.getStarWarsSpeciesInformation(page: page) { (speciesArray) in
             for singleDictionary in speciesArray{
