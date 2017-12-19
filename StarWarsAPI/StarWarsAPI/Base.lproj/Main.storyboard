@@ -204,7 +204,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="eyeUpdate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLN-cB-rm6">
-                                <rect key="frame" x="133" y="365" width="84" height="21"/>
+                                <rect key="frame" x="133" y="365" width="192" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -227,6 +227,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="classificationUpdate" destination="2c7-P9-H9s" id="3lW-3N-0ff"/>
+                        <outlet property="designationUpdate" destination="IuP-km-iwc" id="Bqd-ne-HEk"/>
+                        <outlet property="eyeUpdate" destination="BLN-cB-rm6" id="wr4-Wy-PUi"/>
+                        <outlet property="hairUpdate" destination="s7l-yi-waa" id="tk8-8R-36d"/>
+                        <outlet property="heightUpdate" destination="ux0-2E-n1d" id="Fc6-hH-hJx"/>
+                        <outlet property="languageUpdate" destination="xDl-5X-LxT" id="U8Q-eO-SDD"/>
+                        <outlet property="lifespanUpdate" destination="iiw-bp-MRZ" id="aee-NC-scQ"/>
+                        <outlet property="nameUpdate" destination="iNT-ma-aGh" id="T1f-om-Xm8"/>
+                        <outlet property="skinUpdate" destination="Lme-wk-at2" id="5dx-CL-Ilh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k2a-bB-RPs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
