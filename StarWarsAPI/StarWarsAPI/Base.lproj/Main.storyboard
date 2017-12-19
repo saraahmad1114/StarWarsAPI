@@ -228,14 +228,23 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
+                        <outlet property="averageHeightLabel" destination="yCt-VK-con" id="kQp-4V-R3g"/>
+                        <outlet property="classificationLabel" destination="6az-cZ-Hs2" id="ta1-5r-eZg"/>
                         <outlet property="classificationUpdate" destination="2c7-P9-H9s" id="3lW-3N-0ff"/>
+                        <outlet property="designationLabel" destination="eug-UT-UTH" id="EwP-TZ-Qkd"/>
                         <outlet property="designationUpdate" destination="IuP-km-iwc" id="Bqd-ne-HEk"/>
+                        <outlet property="eyeColorLabel" destination="Vrg-sO-dEi" id="68t-hv-yek"/>
                         <outlet property="eyeUpdate" destination="BLN-cB-rm6" id="wr4-Wy-PUi"/>
+                        <outlet property="hairColorLabel" destination="MZr-k2-GV1" id="vCR-ci-aNw"/>
                         <outlet property="hairUpdate" destination="s7l-yi-waa" id="tk8-8R-36d"/>
                         <outlet property="heightUpdate" destination="ux0-2E-n1d" id="Fc6-hH-hJx"/>
+                        <outlet property="languageLabel" destination="3lb-eE-UXp" id="2t5-0w-6CC"/>
                         <outlet property="languageUpdate" destination="xDl-5X-LxT" id="U8Q-eO-SDD"/>
+                        <outlet property="lifespanLabel" destination="ZYN-iC-K7f" id="no0-FX-6fW"/>
                         <outlet property="lifespanUpdate" destination="iiw-bp-MRZ" id="aee-NC-scQ"/>
+                        <outlet property="nameLabel" destination="TTy-5x-aBk" id="Fba-Vr-cWz"/>
                         <outlet property="nameUpdate" destination="iNT-ma-aGh" id="T1f-om-Xm8"/>
+                        <outlet property="skinColorLabel" destination="SBf-FJ-PDg" id="fBR-Ww-In2"/>
                         <outlet property="skinUpdate" destination="Lme-wk-at2" id="5dx-CL-Ilh"/>
                     </connections>
                 </viewController>

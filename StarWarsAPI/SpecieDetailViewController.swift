@@ -20,10 +20,42 @@ class SpecieDetailViewController: UIViewController {
     @IBOutlet weak var lifespanUpdate: UILabel!
     @IBOutlet weak var languageUpdate: UILabel!
     
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var classificationLabel: UILabel!
+    @IBOutlet weak var designationLabel: UILabel!
+    @IBOutlet weak var averageHeightLabel: UILabel!
+    @IBOutlet weak var skinColorLabel: UILabel!
+    @IBOutlet weak var hairColorLabel: UILabel!
+    @IBOutlet weak var eyeColorLabel: UILabel!
+    @IBOutlet weak var lifespanLabel: UILabel!
+    @IBOutlet weak var languageLabel: UILabel!
+    
     var specieObject: StarWarsSpecies?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.backgroundColor = UIColor.black
+        self.classificationUpdate.textColor = UIColor.white
+        self.nameUpdate.textColor = UIColor.white
+        self.designationUpdate.textColor = UIColor.white
+        self.heightUpdate.textColor = UIColor.white
+        self.skinUpdate.textColor = UIColor.white
+        self.hairUpdate.textColor = UIColor.white
+        self.eyeUpdate.textColor = UIColor.white
+        self.lifespanUpdate.textColor = UIColor.white
+        self.languageUpdate.textColor = UIColor.white
+        
+        self.nameLabel.textColor = UIColor.white
+        self.classificationLabel.textColor = UIColor.white
+        self.designationLabel.textColor = UIColor.white
+        self.averageHeightLabel.textColor = UIColor.white
+        self.skinColorLabel.textColor = UIColor.white
+        self.hairColorLabel.textColor = UIColor.white
+        self.eyeColorLabel.textColor = UIColor.white
+        self.lifespanLabel.textColor = UIColor.white
+        self.languageLabel.textColor = UIColor.white
         
         guard let specieObj = self.specieObject else {print("did not unwrap"); return}
         
