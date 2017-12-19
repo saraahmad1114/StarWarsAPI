@@ -71,6 +71,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="nrI-Bv-XDl" kind="show" identifier="speciesSegue" id="4JY-dr-5Sk"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -82,6 +85,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0pj-M7-1cs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="815" y="-537"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FcC-Ou-nhT">
+            <objects>
+                <viewController id="nrI-Bv-XDl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0cS-cL-IfJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="N7P-8M-lbB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sP5-yL-rpc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k2a-bB-RPs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1654" y="-825"/>
         </scene>
         <!--Star Wars Categories-->
         <scene sceneID="tne-QT-ifu">
