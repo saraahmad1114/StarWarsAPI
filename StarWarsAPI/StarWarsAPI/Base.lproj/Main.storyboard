@@ -86,10 +86,10 @@
             </objects>
             <point key="canvasLocation" x="815" y="-537"/>
         </scene>
-        <!--View Controller-->
+        <!--Specie Detail View Controller-->
         <scene sceneID="FcC-Ou-nhT">
             <objects>
-                <viewController id="nrI-Bv-XDl" sceneMemberID="viewController">
+                <viewController id="nrI-Bv-XDl" customClass="SpecieDetailViewController" customModule="StarWarsAPI" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0cS-cL-IfJ"/>
                         <viewControllerLayoutGuide type="bottom" id="N7P-8M-lbB"/>
