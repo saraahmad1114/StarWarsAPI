@@ -9,6 +9,8 @@
 import UIKit
 
 class SpecieDetailViewController: UIViewController {
+    
+    var specieObject: StarWarsSpecies? 
 
     override func viewDidLoad() {
         super.viewDidLoad()

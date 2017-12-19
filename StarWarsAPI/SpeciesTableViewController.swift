@@ -59,10 +59,13 @@ class SpeciesTableViewController: UITableViewController {
         }
     }
 
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "speciesSegue"{
+            if let destinationVC = segue.destination as? SpecieDetailViewController{
+                let neededIndexPath = self.tableView.indexPathForSelectedRow
+                destinationVC.specieObject = self.store.starWarsSpeciesArray[(neededIndexPath?.row)!]
+            }
+        }
     }
 
 
