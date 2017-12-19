@@ -26,20 +26,8 @@ class StarWarsSpeciesDataStore{
                 
                 var speciesObject = StarWarsSpecies.init(jsonDictionary: unwrappedSingleDictionary)
                 
-                print("**************************************")
-                print(speciesObject.name)
-                print(speciesObject.classification)
-                print(speciesObject.designation)
-                print(speciesObject.averageHeight)
-                print(speciesObject.skinColor)
-                print(speciesObject.hairColor)
-                print(speciesObject.eyeColor)
-                print(speciesObject.lifespan)
-                print(speciesObject.language)
-                
                 self.starWarsSpeciesArray.append(speciesObject)
                 
-                print(self.starWarsSpeciesArray.count)
             }
             
             completion(self.starWarsSpeciesArray)
