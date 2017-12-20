@@ -565,10 +565,10 @@
             </objects>
             <point key="canvasLocation" x="-716" y="969"/>
         </scene>
-        <!--View Controller-->
+        <!--Film Detail View Controller-->
         <scene sceneID="XsE-e1-twi">
             <objects>
-                <viewController id="Wrr-w7-7fq" sceneMemberID="viewController">
+                <viewController id="Wrr-w7-7fq" customClass="FilmDetailViewController" customModule="StarWarsAPI" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8XH-7w-ae7"/>
                         <viewControllerLayoutGuide type="bottom" id="yy3-Px-GCA"/>
