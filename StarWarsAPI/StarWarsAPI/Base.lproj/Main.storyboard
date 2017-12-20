@@ -9,6 +9,24 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="hDR-Bk-0rm">
+            <objects>
+                <viewController id="sV7-Vi-Phx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TTz-8T-Q2i"/>
+                        <viewControllerLayoutGuide type="bottom" id="eDY-g4-QYh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rJE-Gc-6da">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LTd-rU-EoD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98" y="-1220"/>
+        </scene>
         <!--Vehicles-->
         <scene sceneID="bQT-7n-5om">
             <objects>
@@ -34,6 +52,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="sV7-Vi-Phx" kind="show" identifier="vehicleSegue" id="9Us-LV-zZl"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
