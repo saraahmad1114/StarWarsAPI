@@ -10,6 +10,8 @@ import UIKit
 
 class FilmDetailViewController: UIViewController {
 
+    var filmObj: StarWarsFilms? 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
