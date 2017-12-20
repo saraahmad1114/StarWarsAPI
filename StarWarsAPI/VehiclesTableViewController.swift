@@ -59,18 +59,7 @@ class VehiclesTableViewController: UITableViewController {
             })
             }
         }
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "starshipSegue"{
-//            if let destinationVC = segue.destination as? StarshipDetailViewController{
-//                let neededIndexPath = self.tableView.indexPathForSelectedRow!
-//                destinationVC.starShipObject = self.store.starWarsStarshipArray[neededIndexPath.row]
-//            }
-//        }
-//    }
-    
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "vehicleSegue"{
         if let desinationVC = segue.destination as? VehicleDetailViewController{
