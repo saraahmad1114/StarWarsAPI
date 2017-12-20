@@ -551,7 +551,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Wrr-w7-7fq" kind="show" trigger="accessoryAction" id="UUM-72-ZlE"/>
+                                    <segue destination="Wrr-w7-7fq" kind="show" identifier="filmSegue" trigger="accessoryAction" id="UUM-72-ZlE"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
