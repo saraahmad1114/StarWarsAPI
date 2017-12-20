@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Vehicle Detail View Controller-->
         <scene sceneID="hDR-Bk-0rm">
             <objects>
-                <viewController id="sV7-Vi-Phx" sceneMemberID="viewController">
+                <viewController id="sV7-Vi-Phx" customClass="VehicleDetailViewController" customModule="StarWarsAPI" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TTz-8T-Q2i"/>
                         <viewControllerLayoutGuide type="bottom" id="eDY-g4-QYh"/>
