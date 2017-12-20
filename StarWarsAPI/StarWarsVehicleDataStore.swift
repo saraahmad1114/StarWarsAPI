@@ -26,19 +26,7 @@ class StarWarsVehicleDataStore{
                 var starWarsVehicleObject = StarWarsVehicles.init(jsonDictionary: unwrappedSingleDictionary)
                 
                 self.starWarsVehicleArray.append(starWarsVehicleObject)
-                
-                print("*********************************")
-                print(starWarsVehicleObject.name)
-                print(starWarsVehicleObject.model)
-                print(starWarsVehicleObject.manufacturer)
-                print(starWarsVehicleObject.costInCredits)
-                print(starWarsVehicleObject.maxAtmosphericSpeed)
-                print(starWarsVehicleObject.crewCapacity)
-                print(starWarsVehicleObject.vehicleClass)
-                print("*********************************")
-                
-                print(self.starWarsVehicleArray.count)
-                
+                                
             }
             completion(self.starWarsVehicleArray)
         }

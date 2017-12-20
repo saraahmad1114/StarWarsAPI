@@ -17,9 +17,6 @@ class VehiclesTableViewController: UITableViewController {
         
         self.tableView.backgroundColor = UIColor.black
         self.store.getStarWarsVehicles(page: self.store.page) { (vehiclesArray) in
-            print("*********************")
-            print(vehiclesArray)
-            print("*********************")
             OperationQueue.main.addOperation {
                 self.tableView.reloadData()
             }
@@ -29,8 +26,6 @@ class VehiclesTableViewController: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
-    // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -64,8 +59,6 @@ class VehiclesTableViewController: UITableViewController {
             })
             }
         }
-
-    // MARK: - Navigation
     
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
