@@ -20,27 +20,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     
         self.view.backgroundColor = UIColor.black
+        UINavigationBar.appearance().barTintColor = UIColor.red
         
-       UINavigationBar.appearance().barTintColor = UIColor.red
-
-//        self.peopleButton.layer.shadowColor = UIColor.black.cgColor
-//        self.peopleButton.layer.shadowOffset = CGSize(width: 1000, height: 1000)
-//        self.peopleButton.layer.masksToBounds = false
-//        self.peopleButton.layer.shadowRadius = 5
-//
-//        self.peopleButton.layer.shadowOpacity = 0.5
-//        self.peopleButton.layer.cornerRadius = self.peopleButton.frame.width / 2
-//        self.peopleButton.backgroundColor = .white
-//
-//
-//
-//        //starshipsButton
-////        self.starshipsButton.backgroundColor = .yellow
-////        self.starshipsButton.layer.cornerRadius = 8
-////        self.starshipsButton.layer.borderWidth = 1
-////        self.starshipsButton.layer.borderColor = UIColor.white.cgColor
-        
-       
     }
 
     override func didReceiveMemoryWarning() {
