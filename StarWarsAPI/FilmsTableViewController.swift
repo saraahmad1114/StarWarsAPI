@@ -44,11 +44,8 @@ class FilmsTableViewController: UITableViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("1")
         if segue.identifier == "segueFilm"{
-            print("2")
             if let destinationVC = segue.destination as? FilmDetailViewController{
-                print("3")
                 let neededIndexPath = self.tableView.indexPathForSelectedRow
                 destinationVC.filmObj = self.store.starWarsFilmsArray[(neededIndexPath?.row)!]
             }
