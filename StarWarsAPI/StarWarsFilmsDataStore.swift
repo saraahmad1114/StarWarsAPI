@@ -15,7 +15,6 @@ class StarWarsFilmsDataStore {
     
     var starWarsFilmsArray = [StarWarsFilms]()
     
-    
     func getStarWarsFilms ( completion:@escaping ([StarWarsFilms]) -> ()){
         
         StarWarsFilmsAPIClient.getStarWarsFilmsInformation { (fiilmsArray) in
@@ -26,7 +25,7 @@ class StarWarsFilmsDataStore {
                 
                 var starWarsFilmObject = StarWarsFilms.init(jsonDictionary: unwrappedSingleDictionary)
                 
-                self.starWarsFilmsArray.append(starWarsFilmObject)                
+                self.starWarsFilmsArray.append(starWarsFilmObject)
             }
             completion(self.starWarsFilmsArray)
         }
