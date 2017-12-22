@@ -48,6 +48,8 @@ class FilmDetailViewController: UIViewController {
         self.releaseDateLabel.text = releaseDate
         self.openingLabel.text = opening
         
+        //self.openingLabel.numberOfLines = 50
+        
         
         
        
