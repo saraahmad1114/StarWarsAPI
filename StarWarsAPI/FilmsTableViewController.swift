@@ -40,7 +40,6 @@ class FilmsTableViewController: UITableViewController {
         return self.store.starWarsFilmsArray.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "filmCell", for: indexPath)
         cell.textLabel?.textColor = UIColor.white
@@ -49,18 +48,15 @@ class FilmsTableViewController: UITableViewController {
         return cell
     }
     
-
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         print("1")
         if segue.identifier == "filmSegue"{
-            print("2")
             if let destinationVC = segue.destination as? FilmDetailViewController{
-                print("3")
-                let neededIndexPath = self.tableView.indexPathForSelectedRow!
-                destinationVC.filmObj = self.store.starWarsFilmsArray[neededIndexPath.row]
+                let neededIndexPath = self.tableView.indexPathForSelectedRow
+                destinationVC.filmObj = self.store.starWarsFilmsArray[(neededIndexPath?.row)!]
             }
         }
     }
     
-
 }

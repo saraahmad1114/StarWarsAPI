@@ -551,7 +551,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Wrr-w7-7fq" kind="show" identifier="filmSegue" trigger="accessoryAction" id="0rr-z5-lCN"/>
+                                    <segue destination="dW6-Uw-vZS" kind="show" identifier="filmSegue" trigger="accessoryAction" id="RtZ-3m-j9V"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -566,22 +566,22 @@
             <point key="canvasLocation" x="-716" y="969"/>
         </scene>
         <!--Film Detail View Controller-->
-        <scene sceneID="XsE-e1-twi">
+        <scene sceneID="zWX-p3-3EK">
             <objects>
-                <viewController id="Wrr-w7-7fq" customClass="FilmDetailViewController" customModule="StarWarsAPI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dW6-Uw-vZS" customClass="FilmDetailViewController" customModule="StarWarsAPI" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="8XH-7w-ae7"/>
-                        <viewControllerLayoutGuide type="bottom" id="yy3-Px-GCA"/>
+                        <viewControllerLayoutGuide type="top" id="PTs-gT-J4j"/>
+                        <viewControllerLayoutGuide type="bottom" id="fxb-FK-uwN"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="XaU-SO-J5g">
+                    <view key="view" contentMode="scaleToFill" id="4cF-aY-8nh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="exV-3N-fEO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YrG-ku-cep" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-990" y="1752"/>
+            <point key="canvasLocation" x="-961" y="1733"/>
         </scene>
         <!--Starships-->
         <scene sceneID="IxO-7z-Ebm">
