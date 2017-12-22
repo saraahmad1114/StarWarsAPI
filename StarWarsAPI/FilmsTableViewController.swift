@@ -16,9 +16,6 @@ class FilmsTableViewController: UITableViewController {
         super.viewDidLoad()
         self.tableView.backgroundColor = UIColor.black
         self.store.getStarWarsFilms { (filmsArray) in
-//            print("*********************")
-//            print(filmsArray)
-//            print("*********************")
             OperationQueue.main.addOperation {
                 self.tableView.reloadData()
             }

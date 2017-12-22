@@ -8,7 +8,7 @@
 
 import Foundation
 
-class StarWarsFilms{
+class StarWarsFilms {
     
     var title: String?
     var episodeId: Int?
@@ -18,7 +18,6 @@ class StarWarsFilms{
     var releaseDate: String?
     
     init(jsonDictionary: [String: Any]) {
-        
         guard
             let title = jsonDictionary["title"] as? String,
             let episodeId = jsonDictionary["episode_id"] as? Int,
@@ -26,7 +25,6 @@ class StarWarsFilms{
             let director = jsonDictionary["director"] as? String,
             let producer = jsonDictionary["producer"] as? String,
             let releaseDate = jsonDictionary["release_date"] as? String
-        
             else{print("did not unwrap"); return}
         
         self.title = title
@@ -36,5 +34,4 @@ class StarWarsFilms{
         self.producer = producer
         self.releaseDate = releaseDate
     }
-    
 }

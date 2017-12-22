@@ -39,7 +39,5 @@ class StarWarsPlanet {
         self.terrain = terrain
         self.population = population
         
-        
     }
- 
 }
