@@ -26,18 +26,7 @@ class StarWarsFilmsDataStore {
                 
                 var starWarsFilmObject = StarWarsFilms.init(jsonDictionary: unwrappedSingleDictionary)
                 
-                print("**************************************")
-                print(starWarsFilmObject.title)
-                print(starWarsFilmObject.episodeId)
-                print(starWarsFilmObject.opening)
-                print(starWarsFilmObject.director)
-                print(starWarsFilmObject.producer)
-                print(starWarsFilmObject.releaseDate)
-                print("**************************************")
-                
-                self.starWarsFilmsArray.append(starWarsFilmObject)
-                
-                print(self.starWarsFilmsArray.count)
+                self.starWarsFilmsArray.append(starWarsFilmObject)                
             }
             completion(self.starWarsFilmsArray)
         }
