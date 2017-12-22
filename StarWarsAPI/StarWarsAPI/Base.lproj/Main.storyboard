@@ -622,6 +622,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="directorLabel" destination="z8P-ka-iGL" id="6UR-ZE-wzB"/>
+                        <outlet property="episodeLabel" destination="111-2X-a1F" id="L3b-N6-CZZ"/>
+                        <outlet property="openingLabel" destination="j5r-ef-X2K" id="3ic-kw-a3q"/>
+                        <outlet property="producerLabel" destination="F7d-d5-7g7" id="nyL-xM-j8q"/>
+                        <outlet property="releaseDateLabel" destination="iUo-mh-dao" id="rJx-6R-nP4"/>
+                        <outlet property="titleLabel" destination="cVx-HM-bM8" id="aXo-vD-MEE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YrG-ku-cep" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
