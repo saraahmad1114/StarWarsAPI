@@ -1,7 +1,5 @@
 //  StarWarsPeopleTableViewController.swift
 //  StarWarsAPI
-//  Created by Flatiron School on 10/19/17.
-//  Copyright © 2017 Flatiron School. All rights reserved.
 
 import UIKit
 
