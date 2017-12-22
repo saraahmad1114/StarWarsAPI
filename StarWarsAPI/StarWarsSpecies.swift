@@ -32,8 +32,7 @@ class StarWarsSpecies{
             let lifespan = jsonDictionary["average_lifespan"] as? String,
             let language = jsonDictionary["language"] as? String
         
-            else{print("did not unwrap"); return
-    }
+            else{print("did not unwrap"); return}
         self.name = name
         self.classification = classification
         self.designation = designation

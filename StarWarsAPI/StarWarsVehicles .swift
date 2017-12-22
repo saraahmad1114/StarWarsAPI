@@ -39,6 +39,5 @@ class StarWarsVehicles{
         self.crewCapacity = crewCapacity
         self.vehicleClass = vehicleClass
     
-    
     }
 }
