@@ -3,7 +3,6 @@
 //  StarWarsAPI
 //
 //  Created by Sara Ahmad on 12/20/17.
-//  Copyright © 2017 Flatiron School. All rights reserved.
 //
 
 import UIKit
