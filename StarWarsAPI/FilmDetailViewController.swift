@@ -33,7 +33,13 @@ class FilmDetailViewController: UIViewController {
             let releaseDate = filmObject.releaseDate
             else {print("did not unwrap"); return}
         
-        //self.view.backgroundColor = UIColor.black
+        self.view.backgroundColor = UIColor.black
+        self.titleLabel.textColor = UIColor.white
+        self.episodeLabel.textColor = UIColor.white
+        self.directorLabel.textColor = UIColor.white
+        self.producerLabel.textColor = UIColor.white
+        self.releaseDateLabel.textColor = UIColor.white
+        self.openingLabel.textColor = UIColor.white
         
         self.titleLabel.text = title
         self.directorLabel.text = director
