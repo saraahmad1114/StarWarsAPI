@@ -25,9 +25,7 @@ class StarWarsSpeciesDataStore{
                 var speciesObject = StarWarsSpecies.init(jsonDictionary: unwrappedSingleDictionary)
                 
                 self.starWarsSpeciesArray.append(speciesObject)
-                
             }
-            
             completion(self.starWarsSpeciesArray)
         }
     }
