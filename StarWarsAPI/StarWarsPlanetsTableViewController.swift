@@ -1,8 +1,6 @@
 //
 //  StarWarsPlanetsTableViewController.swift
 //  StarWarsAPI
-//
-//
 
 import UIKit
 
