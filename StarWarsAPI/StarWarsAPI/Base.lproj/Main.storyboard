@@ -635,10 +635,10 @@
             </objects>
             <point key="canvasLocation" x="-962.39999999999998" y="1732.9835082458771"/>
         </scene>
-        <!--View Controller-->
+        <!--Star Wars Film Opening View Controller-->
         <scene sceneID="wAD-8q-Qaj">
             <objects>
-                <viewController id="s5D-Os-Z4p" sceneMemberID="viewController">
+                <viewController id="s5D-Os-Z4p" customClass="StarWarsFilmOpeningViewController" customModule="StarWarsAPI" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Y7f-h2-OC3"/>
                         <viewControllerLayoutGuide type="bottom" id="ca4-Zc-3uy"/>
