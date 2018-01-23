@@ -2,7 +2,6 @@
 //  StarWarsPeopleAPIClient.swift
 //  StarWarsAPI
 //
-//  Copyright © 2017 Flatiron School. All rights reserved.
 //
 
 import Foundation
@@ -18,8 +17,7 @@ class StarWarsPeopleAPIClient{
         let convertedStarWarsPeopleURL = URL(string: starWarsPeopleURL)
         
         guard let unwrappedConvertedStarWarsPeopleURL = convertedStarWarsPeopleURL else {
-            print("unwrappedConvertedStarWarsPeopleURL did not unwrap"); return
-        }
+            print("unwrappedConvertedStarWarsPeopleURL did not unwrap"); return}
         
         let request = URLRequest(url: unwrappedConvertedStarWarsPeopleURL)
         
@@ -45,7 +43,5 @@ class StarWarsPeopleAPIClient{
     
         task.resume()
     }
-
-
 
 }

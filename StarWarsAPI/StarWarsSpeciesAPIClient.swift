@@ -2,7 +2,6 @@
 //  StarWarsSpeciesAPIClient.swift
 //  StarWarsAPI
 //
-//  Created by Sara Ahmad on 11/8/17.
 //
 
 import Foundation
@@ -40,6 +39,4 @@ class StarWarsSpeciesAPIClient {
         task.resume()
         
     }
-    
-
 }

@@ -2,7 +2,6 @@
 //  StarWarsFilmsAPIClient.swift
 //  StarWarsAPI
 //
-//  Created by Sara Ahmad on 11/8/17.
 //
 
 import Foundation

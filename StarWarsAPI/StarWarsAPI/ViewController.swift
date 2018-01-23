@@ -18,10 +18,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
         self.view.backgroundColor = UIColor.black
         UINavigationBar.appearance().barTintColor = UIColor.red
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,8 +27,5 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-  
-
-
 }
 

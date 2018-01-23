@@ -2,7 +2,6 @@
 //  StarWarsStarshipsAPIClient.swift
 //  StarWarsAPI
 //
-//  Copyright © 2017 Flatiron School. All rights reserved.
 //
 
 import Foundation
@@ -40,6 +39,5 @@ class StarWarsStarshipsAPIClient{
         task.resume()
     
     }
-
 
 }

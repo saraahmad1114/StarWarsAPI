@@ -2,7 +2,6 @@
 //  StarWarsVehicleAPIClient.swift
 //  StarWarsAPI
 //
-//  Created by Sara Ahmad on 11/8/17.
 //
 
 import Foundation
@@ -38,7 +37,5 @@ class StarWarsVehicleAPIClient {
             completion(jsonArray)
         }
         task.resume()
-        
     }
-    
 }

@@ -18,7 +18,6 @@ class StarWarsStarship{
     var starshipClass: String?
     
     init(jsonDictionary: [String: Any]) {
-        
         guard
         let name = jsonDictionary["name"] as? String,
         let model = jsonDictionary["model"] as? String,
