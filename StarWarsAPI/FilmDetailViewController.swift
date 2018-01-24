@@ -16,7 +16,7 @@ class FilmDetailViewController: UIViewController {
     @IBOutlet weak var directorLabel: UILabel!
     @IBOutlet weak var producerLabel: UILabel!
     @IBOutlet weak var releaseDateLabel: UILabel!
-    @IBOutlet weak var openingLabel: UILabel!
+    //@IBOutlet weak var openingLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +28,7 @@ class FilmDetailViewController: UIViewController {
             let director = filmObject.director,
             let episodeId = filmObject.episodeId,
             let producer = filmObject.producer,
-            let opening = filmObject.opening,
+            //let opening = filmObject.opening,
             let releaseDate = filmObject.releaseDate
             else {print("did not unwrap"); return}
         
@@ -38,27 +38,18 @@ class FilmDetailViewController: UIViewController {
         self.directorLabel.textColor = UIColor.white
         self.producerLabel.textColor = UIColor.white
         self.releaseDateLabel.textColor = UIColor.white
-        self.openingLabel.textColor = UIColor.white
+        //self.openingLabel.textColor = UIColor.white
         
         self.titleLabel.text = title
         self.directorLabel.text = director
         self.episodeLabel.text = String(episodeId)
         self.producerLabel.text = producer
         self.releaseDateLabel.text = releaseDate
-        self.openingLabel.text = opening
-        
-        //self.openingLabel.numberOfLines = 50
-        
-        
-        
-       
+        //self.openingLabel.text = opening
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-
-
 
 }
