@@ -16,7 +16,16 @@ class FilmDetailViewController: UIViewController {
     @IBOutlet weak var directorLabel: UILabel!
     @IBOutlet weak var producerLabel: UILabel!
     @IBOutlet weak var releaseDateLabel: UILabel!
+    @IBOutlet weak var releaseDateLab: UILabel!
     //@IBOutlet weak var openingLabel: UILabel!
+    
+    @IBOutlet weak var movieTitleLabel: UILabel!
+    @IBOutlet weak var episodeNumberLabel: UILabel!
+    @IBOutlet weak var releaseLabel: UILabel!
+    @IBOutlet weak var movieDirectorLabel: UILabel!
+    @IBOutlet weak var movieProducerLabel: UILabel!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,14 +46,20 @@ class FilmDetailViewController: UIViewController {
         self.episodeLabel.textColor = UIColor.white
         self.directorLabel.textColor = UIColor.white
         self.producerLabel.textColor = UIColor.white
-        self.releaseDateLabel.textColor = UIColor.white
+        self.releaseDateLab.textColor = UIColor.white
         //self.openingLabel.textColor = UIColor.white
+        
+        self.movieTitleLabel.textColor = UIColor.white
+        self.episodeNumberLabel.textColor = UIColor.white
+        self.releaseLabel.textColor = UIColor.white
+        self.movieDirectorLabel.textColor = UIColor.white
+        self.movieProducerLabel.textColor = UIColor.white
         
         self.titleLabel.text = title
         self.directorLabel.text = director
         self.episodeLabel.text = String(episodeId)
         self.producerLabel.text = producer
-        self.releaseDateLabel.text = releaseDate
+        self.releaseDateLab.text = releaseDate
         //self.openingLabel.text = opening
     }
 
