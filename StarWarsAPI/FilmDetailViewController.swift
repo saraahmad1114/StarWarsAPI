@@ -17,7 +17,6 @@ class FilmDetailViewController: UIViewController {
     @IBOutlet weak var producerLabel: UILabel!
     @IBOutlet weak var releaseDateLabel: UILabel!
     @IBOutlet weak var releaseDateLab: UILabel!
-    //@IBOutlet weak var openingLabel: UILabel!
     
     @IBOutlet weak var movieTitleLabel: UILabel!
     @IBOutlet weak var episodeNumberLabel: UILabel!
@@ -47,7 +46,6 @@ class FilmDetailViewController: UIViewController {
         self.directorLabel.textColor = UIColor.white
         self.producerLabel.textColor = UIColor.white
         self.releaseDateLab.textColor = UIColor.white
-        //self.openingLabel.textColor = UIColor.white
         
         self.movieTitleLabel.textColor = UIColor.white
         self.episodeNumberLabel.textColor = UIColor.white
