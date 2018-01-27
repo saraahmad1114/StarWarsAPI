@@ -47,6 +47,7 @@ class PlanetDetailViewController: UIViewController {
         self.updateDiameterLabel.textColor = UIColor.white
         self.updateGravityLabel.textColor = UIColor.white
         self.updateTerrainLabel.textColor = UIColor.white
+        self.updateTerrainLabel.sizeToFit()
         self.updatePopulationLabel.textColor = UIColor.white
 
         guard let unwrappedStarWarsPlanetObject = self.starWarsPlanetObject else{print("did not unwrap"); return}

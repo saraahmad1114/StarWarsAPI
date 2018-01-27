@@ -46,6 +46,8 @@ class FilmDetailViewController: UIViewController {
         self.directorLabel.textColor = UIColor.white
         self.producerLabel.textColor = UIColor.white
         self.releaseDateLab.textColor = UIColor.white
+
+        
         
         self.movieTitleLabel.textColor = UIColor.white
         self.episodeNumberLabel.textColor = UIColor.white
