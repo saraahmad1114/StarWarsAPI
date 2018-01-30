@@ -38,7 +38,7 @@ class PlanetDetailViewController: UIViewController {
         self.orbitalPeriod.textColor = UIColor.white
         self.diameter.textColor = UIColor.white
         self.gravity.textColor = UIColor.white
-        self.terrain.textColor = UIColor.white
+        //self.terrain.textColor = UIColor.white
         self.population.textColor = UIColor.white
         
         self.updateNameLabel.textColor = UIColor.white
@@ -46,13 +46,12 @@ class PlanetDetailViewController: UIViewController {
         self.updateOrbitalLabel.textColor = UIColor.white
         self.updateDiameterLabel.textColor = UIColor.white
         self.updateGravityLabel.textColor = UIColor.white
-        self.updateTerrainLabel.textColor = UIColor.white
-        self.updateTerrainLabel.sizeToFit()
+       // self.updateTerrainLabel.textColor = UIColor.white
+      //  self.updateTerrainLabel.sizeToFit()
 //        self.updateTerrainLabel.numberOfLines = 0
-        self.updateTerrainLabel.lineBreakMode = NSLineBreakMode.byWordWrapping
+       // self.updateTerrainLabel.lineBreakMode = NSLineBreakMode.byWordWrapping
         
-        self.updateTerrainLabel.numberOfLines = 0
-        
+       // self.updateTerrainLabel.numberOfLines = 0
         self.updatePopulationLabel.textColor = UIColor.white
 
         guard let unwrappedStarWarsPlanetObject = self.starWarsPlanetObject else{print("did not unwrap"); return}
@@ -63,7 +62,7 @@ class PlanetDetailViewController: UIViewController {
             let orbitalPeriod = unwrappedStarWarsPlanetObject.orbitalPeriod,
             let diameter = unwrappedStarWarsPlanetObject.diameter,
             let gravity = unwrappedStarWarsPlanetObject.gravity,
-            let terrain = unwrappedStarWarsPlanetObject.terrain,
+           // let terrain = unwrappedStarWarsPlanetObject.terrain,
             let population = unwrappedStarWarsPlanetObject.population
             else { print("did not unwrap"); return}
         
@@ -72,7 +71,7 @@ class PlanetDetailViewController: UIViewController {
         self.updateOrbitalLabel.text = orbitalPeriod
         self.updateDiameterLabel.text = diameter
         self.updateGravityLabel.text = gravity
-        self.updateTerrainLabel.text = terrain
+       // self.updateTerrainLabel.text = terrain
         self.updatePopulationLabel.text = population
         
         // Do any additional setup after loading the view.
