@@ -757,9 +757,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cost in Credits" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gr-22-ajT">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cost in Credits" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gr-22-ajT">
                                 <rect key="frame" x="22" y="191" width="113" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -818,9 +817,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="updateCostInCredits" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDL-28-LXp">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="updateCostInCredits" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDL-28-LXp">
                                 <rect key="frame" x="156" y="191" width="203" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -865,14 +863,19 @@
                         <constraints>
                             <constraint firstItem="63A-nn-Xv1" firstAttribute="leading" secondItem="Yly-B5-4jO" secondAttribute="leadingMargin" constant="9" id="9zh-l2-cqi"/>
                             <constraint firstItem="wzE-i4-8Qa" firstAttribute="leading" secondItem="dJW-Cm-Q4m" secondAttribute="trailing" constant="42" id="LL7-gd-M9Q"/>
+                            <constraint firstItem="5gr-22-ajT" firstAttribute="leading" secondItem="Yly-B5-4jO" secondAttribute="leadingMargin" constant="6" id="SPM-gb-tyk"/>
                             <constraint firstItem="W7C-7s-plL" firstAttribute="trailing" secondItem="Yly-B5-4jO" secondAttribute="trailingMargin" id="ToU-wV-BvZ"/>
+                            <constraint firstItem="5gr-22-ajT" firstAttribute="top" secondItem="63A-nn-Xv1" secondAttribute="bottom" constant="26" id="Vrg-m5-1TU"/>
                             <constraint firstItem="63A-nn-Xv1" firstAttribute="top" secondItem="dJW-Cm-Q4m" secondAttribute="bottom" constant="24" id="YfR-UM-yXb"/>
                             <constraint firstItem="wzE-i4-8Qa" firstAttribute="top" secondItem="ghG-Lw-8lJ" secondAttribute="bottom" constant="34" id="btY-of-X7q"/>
                             <constraint firstItem="wzE-i4-8Qa" firstAttribute="trailing" secondItem="Yly-B5-4jO" secondAttribute="trailingMargin" id="c8k-bq-uzr"/>
                             <constraint firstItem="dJW-Cm-Q4m" firstAttribute="top" secondItem="ghG-Lw-8lJ" secondAttribute="bottom" constant="35" id="dvg-zY-g71"/>
+                            <constraint firstItem="NDL-28-LXp" firstAttribute="top" secondItem="W7C-7s-plL" secondAttribute="bottom" constant="27" id="ebP-rE-Vqh"/>
                             <constraint firstItem="W7C-7s-plL" firstAttribute="top" secondItem="wzE-i4-8Qa" secondAttribute="bottom" constant="24" id="h1W-O2-c6x"/>
                             <constraint firstItem="dJW-Cm-Q4m" firstAttribute="leading" secondItem="Yly-B5-4jO" secondAttribute="leadingMargin" constant="9" id="m7f-P0-52U"/>
+                            <constraint firstItem="NDL-28-LXp" firstAttribute="trailing" secondItem="Yly-B5-4jO" secondAttribute="trailingMargin" id="ngG-tu-8Iz"/>
                             <constraint firstItem="W7C-7s-plL" firstAttribute="leading" secondItem="63A-nn-Xv1" secondAttribute="trailing" constant="39" id="pg3-um-hNN"/>
+                            <constraint firstItem="NDL-28-LXp" firstAttribute="leading" secondItem="5gr-22-ajT" secondAttribute="trailing" constant="21" id="vQ1-V8-HkV"/>
                         </constraints>
                     </view>
                     <connections>
