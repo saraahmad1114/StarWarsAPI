@@ -1222,22 +1222,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y5s-qr-gdN">
-                                <rect key="frame" x="303" y="64" width="17" height="603"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="17" id="HXp-8n-OB9"/>
-                                    <constraint firstAttribute="height" constant="603" id="rWe-iQ-Zt4"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mof-pr-FvG">
-                                <rect key="frame" x="-3" y="604" width="378" height="14"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="378" id="9Bb-uE-Afc"/>
-                                    <constraint firstAttribute="height" constant="14" id="Wpa-do-4BX"/>
-                                </constraints>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Update Height" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="syK-J7-Coe">
                                 <rect key="frame" x="110" y="148" width="112" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1254,7 +1238,6 @@
                         <outlet property="genderLabel" destination="aE7-EO-ij9" id="aNu-19-T6u"/>
                         <outlet property="hairColorLabel" destination="FAx-zu-jiM" id="jwH-Gw-dbm"/>
                         <outlet property="heightLabel" destination="2ib-tz-LL0" id="GAz-bC-R4m"/>
-                        <outlet property="horizontalBar" destination="Y5s-qr-gdN" id="pvO-4P-SvI"/>
                         <outlet property="nameLabel" destination="9HK-cV-Ac0" id="tQW-jw-u3A"/>
                         <outlet property="skinColorLabel" destination="Gtr-rK-BFC" id="Bg6-Id-Pmm"/>
                         <outlet property="updateBirthYearLabel" destination="TqG-6S-4CY" id="NE0-J0-1m4"/>
@@ -1265,7 +1248,6 @@
                         <outlet property="updateNameLabel" destination="vYy-fI-gWs" id="HJk-W5-Hbw"/>
                         <outlet property="updateSkinColorLabel" destination="0L4-Id-zXG" id="x8u-2x-FJo"/>
                         <outlet property="updateWeightLabel" destination="S4C-pp-PFi" id="Iic-OD-Kya"/>
-                        <outlet property="verticalBar" destination="mof-pr-FvG" id="4GW-HJ-nD8"/>
                         <outlet property="weightLabel" destination="hmm-Uw-TXF" id="S6A-ST-Akg"/>
                     </connections>
                 </viewController>
