@@ -18,7 +18,7 @@ class PlanetDetailViewController: UIViewController {
     @IBOutlet weak var gravity: UILabel!
     @IBOutlet weak var terrain: UILabel!
     @IBOutlet weak var population: UILabel!
-    
+    @IBOutlet weak var verticalBar: UIView!
     
     @IBOutlet weak var updateNameLabel: UILabel!
     @IBOutlet weak var updateRotationLabel: UILabel!
@@ -46,6 +46,8 @@ class PlanetDetailViewController: UIViewController {
         self.updateOrbitalLabel.textColor = UIColor.white
         self.updateDiameterLabel.textColor = UIColor.white
         self.updateGravityLabel.textColor = UIColor.white
+        
+        //self.verticalBar.tintColor = UIColor.white
        // self.updateTerrainLabel.textColor = UIColor.white
       //  self.updateTerrainLabel.sizeToFit()
 //        self.updateTerrainLabel.numberOfLines = 0

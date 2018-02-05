@@ -21,6 +21,7 @@ class PeopleDetailViewController: UIViewController {
     @IBOutlet weak var updateGenderLabel: UILabel!
     //@IBOutlet weak var horizontalBar: UIView!
     //@IBOutlet weak var verticalBar: UIView!
+    @IBOutlet weak var verticalBar: UIView!
     
     @IBOutlet weak var heightLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
