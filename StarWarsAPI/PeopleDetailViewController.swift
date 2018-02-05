@@ -19,6 +19,8 @@ class PeopleDetailViewController: UIViewController {
     @IBOutlet weak var updateEyeColorUpdate: UILabel!
     @IBOutlet weak var updateBirthYearLabel: UILabel!
     @IBOutlet weak var updateGenderLabel: UILabel!
+    @IBOutlet weak var horizontalBar: UIView!
+    @IBOutlet weak var verticalBar: UIView!
     
     @IBOutlet weak var heightLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
@@ -43,6 +45,8 @@ class PeopleDetailViewController: UIViewController {
         self.updateEyeColorUpdate.textColor = UIColor.white
         self.updateBirthYearLabel.textColor = UIColor.white
         self.updateGenderLabel.textColor = UIColor.white
+        self.horizontalBar.tintColor = UIColor.white
+        self.verticalBar.tintColor = UIColor.white
         
         self.heightLabel.textColor = UIColor.white
         self.nameLabel.textColor = UIColor.white
