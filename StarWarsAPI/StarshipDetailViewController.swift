@@ -56,6 +56,19 @@ class StarshipDetailViewController: UIViewController {
         self.updateCargoCapacity.textColor = UIColor.white
         self.updateStarshipClassLabel.textColor = UIColor.white
         
+        self.updateStarshipClassLabel.sizeToFit()
+        self.updateStarshipClassLabel.adjustsFontSizeToFitWidth = true
+        self.updateStarshipClassLabel.adjustsFontForContentSizeCategory = true
+        self.updateStarshipClassLabel.numberOfLines = 0
+        self.updateStarshipClassLabel.lineBreakMode = NSLineBreakMode(rawValue: 0)!
+        
+        self.updateManufacturer.sizeToFit()
+        self.updateManufacturer.adjustsFontForContentSizeCategory = true
+        self.updateManufacturer.adjustsFontSizeToFitWidth = true
+        self.updateManufacturer.adjustsFontForContentSizeCategory = true
+        self.updateManufacturer.numberOfLines = 0
+        self.updateManufacturer.lineBreakMode = NSLineBreakMode(rawValue: 0)!
+        
         guard let starObject = starShipObject else{print("did not unwrap"); return}
         
         guard let name = starObject.name,
