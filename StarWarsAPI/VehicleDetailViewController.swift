@@ -60,7 +60,13 @@ class VehicleDetailViewController: UIViewController {
             
             else {print("did not unwrap"); return}
         
-        
+        self.updateName.text = name
+        self.updateModel.text = model
+        self.updateManufacturer.text = manufacturer
+        self.updateCost.text = cost
+        self.updateSpeed.text = speed
+        self.updateCrew.text = crew
+        self.updateClass.text = vehichleClass
         
     }
 
