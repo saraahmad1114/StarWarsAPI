@@ -123,6 +123,22 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="costInCreditsLabel" destination="35Q-kK-qgC" id="gJe-pu-RrW"/>
+                        <outlet property="crewCapacityLabel" destination="Ylq-sk-ddf" id="lcI-lP-ysF"/>
+                        <outlet property="manufacturerLabel" destination="WMv-vX-a1s" id="30y-je-DJJ"/>
+                        <outlet property="maxAtmosphericSpeedLabel" destination="Soi-Sc-ctW" id="wsi-1g-CeI"/>
+                        <outlet property="modelLabel" destination="ThY-DZ-Tux" id="qBG-F1-jpf"/>
+                        <outlet property="nameLabel" destination="ltf-db-asY" id="lob-B4-I2h"/>
+                        <outlet property="updateClass" destination="lZH-NX-9pg" id="L71-uH-1CX"/>
+                        <outlet property="updateCost" destination="DW1-bn-dlr" id="jXl-gM-eyp"/>
+                        <outlet property="updateCrew" destination="PCi-Sv-cPb" id="DHo-2p-48N"/>
+                        <outlet property="updateManufacturer" destination="k2n-yq-jJG" id="XfL-wi-rui"/>
+                        <outlet property="updateModel" destination="J97-Wy-efd" id="Mw0-EC-rJ7"/>
+                        <outlet property="updateName" destination="w54-Ak-3QL" id="REM-Xz-7pW"/>
+                        <outlet property="updateSpeed" destination="OGx-vN-jkj" id="ctt-S1-lNg"/>
+                        <outlet property="vehicleClassLabel" destination="7mV-Yo-9gj" id="zmF-Ot-Xe4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LTd-rU-EoD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
