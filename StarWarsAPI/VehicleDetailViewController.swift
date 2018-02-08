@@ -30,6 +30,38 @@ class VehicleDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.view.backgroundColor = UIColor.black
+        self.nameLabel.textColor = UIColor.white
+        self.modelLabel.textColor = UIColor.white
+        self.manufacturerLabel.textColor = UIColor.white
+        self.costInCreditsLabel.textColor = UIColor.white
+        self.maxAtmosphericSpeedLabel.textColor = UIColor.white
+        self.crewCapacityLabel.textColor = UIColor.white
+        self.vehicleClassLabel.textColor = UIColor.white
+        
+        self.updateName.textColor = UIColor.white
+        self.updateModel.textColor = UIColor.white
+        self.updateManufacturer.textColor = UIColor.white
+        self.updateCost.textColor = UIColor.white
+        self.updateSpeed.textColor = UIColor.white
+        self.updateCrew.textColor = UIColor.white
+        self.updateClass.textColor = UIColor.white
+        
+        guard let vehicleObject = self.vehicleObj else {print("did not unwrap"); return}
+        
+        guard
+            let name = vehicleObject.name,
+            let model = vehicleObject.model,
+            let manufacturer = vehicleObject.manufacturer,
+            let cost = vehicleObject.costInCredits,
+            let speed = vehicleObject.maxAtmosphericSpeed,
+            let crew = vehicleObject.crewCapacity,
+            let vehichleClass = vehicleObject.vehicleClass
+            
+            else {print("did not unwrap"); return}
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
