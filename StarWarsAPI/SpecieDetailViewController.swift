@@ -80,9 +80,6 @@ class SpecieDetailViewController: UIViewController {
         self.lifespanUpdate.text = lifespan
         self.lifespanUpdate.text = language
 
-        
-        
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

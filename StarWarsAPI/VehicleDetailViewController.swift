@@ -42,6 +42,8 @@ class VehicleDetailViewController: UIViewController {
         self.updateName.textColor = UIColor.white
         self.updateModel.textColor = UIColor.white
         self.updateManufacturer.textColor = UIColor.white
+        
+        self.updateManufacturer.numberOfLines = 0
         self.updateCost.textColor = UIColor.white
         self.updateSpeed.textColor = UIColor.white
         self.updateCrew.textColor = UIColor.white
