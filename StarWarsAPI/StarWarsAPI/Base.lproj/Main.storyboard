@@ -232,9 +232,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Designation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eug-UT-UTH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Designation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eug-UT-UTH">
                                 <rect key="frame" x="40" y="183" width="91" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -293,9 +292,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="designationUpdate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IuP-km-iwc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="designationUpdate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IuP-km-iwc">
                                 <rect key="frame" x="158" y="183" width="191" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -350,9 +348,14 @@
                             <constraint firstItem="TTy-5x-aBk" firstAttribute="top" secondItem="0cS-cL-IfJ" secondAttribute="bottom" constant="27" id="Csm-8t-XJe"/>
                             <constraint firstItem="TTy-5x-aBk" firstAttribute="leading" secondItem="sP5-yL-rpc" secondAttribute="leadingMargin" constant="21" id="Fkv-Kh-FsB"/>
                             <constraint firstItem="2c7-P9-H9s" firstAttribute="top" secondItem="iNT-ma-aGh" secondAttribute="bottom" constant="25" id="LFh-M3-hTX"/>
+                            <constraint firstItem="IuP-km-iwc" firstAttribute="top" secondItem="2c7-P9-H9s" secondAttribute="bottom" constant="25" id="M7o-ni-7dG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="iNT-ma-aGh" secondAttribute="trailing" constant="25" id="MTv-dG-f0t"/>
                             <constraint firstItem="iNT-ma-aGh" firstAttribute="leading" secondItem="TTy-5x-aBk" secondAttribute="trailing" constant="16" id="QcF-iO-hqb"/>
+                            <constraint firstItem="IuP-km-iwc" firstAttribute="leading" secondItem="eug-UT-UTH" secondAttribute="trailing" constant="27" id="RYn-1t-JV6"/>
                             <constraint firstItem="2c7-P9-H9s" firstAttribute="leading" secondItem="6az-cZ-Hs2" secondAttribute="trailing" constant="17" id="Rtb-Qk-uM7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IuP-km-iwc" secondAttribute="trailing" constant="10" id="SZh-gQ-eZj"/>
+                            <constraint firstItem="eug-UT-UTH" firstAttribute="leading" secondItem="sP5-yL-rpc" secondAttribute="leadingMargin" constant="24" id="ZVt-fo-hg2"/>
+                            <constraint firstItem="eug-UT-UTH" firstAttribute="top" secondItem="6az-cZ-Hs2" secondAttribute="bottom" constant="25" id="gvX-Yc-d8s"/>
                             <constraint firstItem="6az-cZ-Hs2" firstAttribute="top" secondItem="TTy-5x-aBk" secondAttribute="bottom" constant="25" id="ll6-rZ-a7U"/>
                             <constraint firstAttribute="trailingMargin" secondItem="2c7-P9-H9s" secondAttribute="trailing" constant="16" id="zjl-fM-LmU"/>
                         </constraints>
