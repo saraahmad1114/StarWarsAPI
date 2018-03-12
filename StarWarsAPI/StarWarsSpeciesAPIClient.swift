@@ -37,6 +37,5 @@ class StarWarsSpeciesAPIClient {
             completion(jsonArray)
         }
         task.resume()
-        
     }
 }

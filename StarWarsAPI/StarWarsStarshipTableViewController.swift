@@ -32,7 +32,7 @@ class StarWarsStarshipTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "starshipCell", for: indexPath)
-        cell.textLabel?.textColor = UIColor.white
+            cell.textLabel?.textColor = UIColor.white
             cell.backgroundColor = UIColor.black
             cell.textLabel?.text = self.store.starWarsStarshipArray[indexPath.row].name
         return cell
